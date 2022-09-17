@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ================================= Combat Mechanoid gun ==================================== -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>VFE_Gun_CombatMechanoidGun</defName>
+    <label>handheld mini-turret</label>
+    <description>A portable automatic turret gun. It utilises modern assault rifle components within a mechanoid-compatible frame.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/MechanoidTurretGun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker Inherit='False' />
+    <statBases>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.64</AccuracyShort>
+      <AccuracyMedium>0.41</AccuracyMedium>
+      <AccuracyLong>0.22</AccuracyLong>
+      <RangedWeapon_Cooldown>4.8</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>Bullet_MiniTurret</defaultProjectile>
+        <warmupTime>0.4</warmupTime>
+        <range>28.9</range>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>GunShotA</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags Inherit='False'>
+      <li>IndustrialGunCombatMechanoid</li>
+    </weaponTags>
+	<tradeTags Inherit='False' />
+    <thingCategories Inherit='False' />
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <relicChance>0</relicChance>
+  </ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>VFE_Gun_RaiderMechanoidGun</defName>
+		<label>handheld autocannon turret</label>
+		<description>A portable version of the autocannon turret gun. Its large-caliber shells do heavy damage over significant ranges.</description>
+		<graphicData>
+			<texPath>Things/Automation/RaiderMechanoid/MechanoidTurretAutocannon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker Inherit='False' />
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<statBases>
+			<AccuracyTouch>0.25</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.60</AccuracyMedium>
+			<AccuracyLong>0.45</AccuracyLong>
+			<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>40</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<costList>
+			<Steel>350</Steel>
+			<Plasteel>40</Plasteel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<defaultProjectile>Bullet_AutocannonTurret</defaultProjectile>
+				<warmupTime>0</warmupTime>
+				<minRange>2.9</minRange>
+				<range>30.9</range>
+				<ticksBetweenBurstShots>17</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>Shot_Autocannon</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>12</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags Inherit='False'>
+			<li>IndustrialGunCombatMechanoid</li>
+		</weaponTags>
+		<tradeTags Inherit='False' />
+		<thingCategories Inherit='False' />
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<relicChance>0</relicChance>
+	</ThingDef>
+	
+	<ThingDef ParentName="VFE_Gun_InfernoSpewerBase">
+		<defName>VFE_Gun_InfernoSpewerSmall</defName>
+		<label>small inferno spewer</label>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>VFE_Bullet_InfernoSpewerSmall</defaultProjectile>
+				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+				<warmupTime>1.25</warmupTime>
+				<range>9.9</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>VFE_Shot_InfernoSpewer</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<VFECore.ExpandableProjectileDef ParentName="BaseBullet">
+		<defName>VFE_Bullet_InfernoSpewerSmall</defName>
+		<label>small inferno spewer shot</label>
+		<thingClass>VFECore.FlamethrowProjectile</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Proj_InfernoSpewer</texPath>
+			<texPathFadeOut>Things/Projectile/Proj_InfernoSpewerFadeOut</texPathFadeOut>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Flame</damageDef>
+			<speed>30</speed>
+			<damageAmountBase>2</damageAmountBase>
+		</projectile>
+		<drawOffscreen>true</drawOffscreen>
+		<lifeTimeDuration>40</lifeTimeDuration>
+		<widthScaleFactor>0.55</widthScaleFactor>
+		<heightScaleFactor>0.90</heightScaleFactor>
+		<startingPositionOffset>(0, 0, -1)</startingPositionOffset>
+		<totalSizeScale>1.05</totalSizeScale>
+		<tickFrameRate>2</tickFrameRate>
+		<finalTickFrameRate>5</finalTickFrameRate>
+		<tickDamageRate>20</tickDamageRate>
+		<dealsDamageOnce>true</dealsDamageOnce>
+		<minDistanceToAffect>2</minDistanceToAffect>
+	</VFECore.ExpandableProjectileDef>
+</Defs>
