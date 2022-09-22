@@ -269,18 +269,6 @@
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
-    <defName>VFE_FactoryFloor</defName>
-    <isTerrain>true</isTerrain>
-    <terrain>VFE_FactoryFloor</terrain>
-  </KCSG.SymbolDef>
-
-  <KCSG.SymbolDef>
-    <defName>VFE_FactoryPath</defName>
-    <isTerrain>true</isTerrain>
-    <terrain>VFE_FactoryPath</terrain>
-  </KCSG.SymbolDef>
-
-  <KCSG.SymbolDef>
     <defName>VFEM_HeavyHopper_West</defName>
     <thing>VFEM_HeavyHopper</thing>
     <rotation>West</rotation>
