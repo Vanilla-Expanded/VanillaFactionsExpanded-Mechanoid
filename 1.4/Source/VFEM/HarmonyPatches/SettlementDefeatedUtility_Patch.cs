@@ -63,14 +63,14 @@ namespace VFEM.HarmonyPatches
 			}
 			Map map = factionBase.Map;
 			if (map == null || !IsDefeated(map, factionBase.Faction))
-			{
-				return;
+            {
+                return;
 			}
 			bool defeated = IsDefeated(map, factionBase.Faction);
 			SettlementDefeatedUtility_Patch.Postfix(map, factionBase.Faction, ref defeated);
 			if (!defeated)
             {
-				return;
+                return;
             }
 			IdeoUtility.Notify_PlayerRaidedSomeone(map.mapPawns.FreeColonistsSpawned);
 			DestroyedSettlement destroyedSettlement = (DestroyedSettlement)WorldObjectMaker.MakeWorldObject(WorldObjectDefOf.DestroyedSettlement);
@@ -82,13 +82,6 @@ namespace VFEM.HarmonyPatches
 			component.SetNotifiedSilently();
 			StringBuilder stringBuilder = new StringBuilder();
 			stringBuilder.Append("LetterFactionBaseDefeated".Translate(factionBase.Label, component.DetectionCountdownTimeLeftString));
-			if (!HasAnyOtherBase(factionBase))
-			{
-				factionBase.Faction.defeated = true;
-				stringBuilder.AppendLine();
-				stringBuilder.AppendLine();
-				stringBuilder.Append("LetterFactionBaseDefeated_FactionDestroyed".Translate(factionBase.Faction.Name));
-			}
 			if (factionBase.def.GetModExtension<MechanoidBaseExtension>()?.defeatingGivesOutOtherFactionsGoodwill ?? false)
 			{
 				foreach (Faction allFaction in Find.FactionManager.AllFactions)
