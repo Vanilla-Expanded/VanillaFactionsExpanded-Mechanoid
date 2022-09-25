@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Defs>
+<?xml version="1.0" encoding="utf-8"?><Defs>
 
       <SoundDef>
     <defName>VFE_Shot_ChargeRailgun</defName>  
@@ -295,8 +295,8 @@
       <li>
         <onCamera>True</onCamera>
         <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Buildings/LongRangeMissile_ExplosionOnMap</clipFolderPath>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Buildings/LongRangeMissile_ExplosionOnMap</clipPath>
           </li>
         </grains>      
         <volumeRange>80~80</volumeRange>      
