@@ -1,8 +1,33 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<ThingDef ParentName="BaseMechanoid" Name="BaseVFEMachine" Abstract="True">
+	<ThingDef ParentName="BasePawn" Name="BaseVFEMachine" Abstract="True">
 		<thingClass>VFEMech.Machine</thingClass>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<PsychicSensitivity>0.5</PsychicSensitivity>
+			<ToxicResistance>1</ToxicResistance>
+			<Flammability>0</Flammability>
+			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
+			<ComfyTemperatureMax>250</ComfyTemperatureMax>
+			<MeatAmount>0</MeatAmount>
+			<ArmorRating_Heat>2.00</ArmorRating_Heat>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+		</statBases>
+		<receivesSignals>true</receivesSignals>
+		<tradeability>None</tradeability>
+		<race>
+			<allowedOnCaravan>false</allowedOnCaravan>
+			<fleshType>Mechanoid</fleshType>
+			<needsRest>false</needsRest>
+			<hasGenders>false</hasGenders>
+			<foodType>None</foodType>
+			<lifeExpectancy>2500</lifeExpectancy>
+			<bloodDef>Filth_MachineBits</bloodDef>
+			<soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+			<soundCallIntervalFriendlyFactor>2</soundCallIntervalFriendlyFactor>
+		</race>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseVFEMachine">
@@ -28,6 +53,9 @@
 			</li>
 		</tools>
 		<race>
+			<mechEnabledWorkTypes>
+				<li>Cleaning</li>
+			</mechEnabledWorkTypes>
 			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>VFE_Mechanoids_Machine</thinkTreeMain>
 			<body>MechanicalCentipede</body>
@@ -100,6 +128,9 @@
 			</li>
 		</tools>
 		<race>
+			<mechEnabledWorkTypes>
+				<li>Hauling</li>
+			</mechEnabledWorkTypes>
 			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>VFE_Mechanoids_Machine</thinkTreeMain>
 			<body>MechanicalCentipede</body>
@@ -173,6 +204,9 @@
 			</li>
 		</tools>
 		<race>
+			<mechEnabledWorkTypes>
+				<li>Mining</li>
+			</mechEnabledWorkTypes>
 			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>VFE_Mechanoids_Machine</thinkTreeMain>
 			<body>MechanicalCentipede</body>
@@ -481,9 +515,10 @@
 			</li>
 		</tools>
 		<race>
+			<allowedOnCaravan>true</allowedOnCaravan>
 			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>VFE_Mechanoids_Machine_Riddable</thinkTreeMain>
-		<thinkTreeConstant>VFE_Mechanoids_Machine_RiddableConstant</thinkTreeConstant>
+			<thinkTreeConstant>VFE_Mechanoids_Machine_RiddableConstant</thinkTreeConstant>
 			<body>MechanicalTermite</body>
 			<baseBodySize>3</baseBodySize>
 			<baseHealthScale>4</baseHealthScale>
@@ -511,11 +546,6 @@
 				<hoursActive>240</hoursActive>
 			</li>
 		</comps>
-		<modExtensions>
-			<li Class="VFE.Mechanoids.MechanoidExtension">
-				<isCaravanRiddable>true</isCaravanRiddable>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="BaseMechanoidKind">
@@ -561,6 +591,9 @@
 			</li>
 		</tools>
 		<race>
+			<mechEnabledWorkTypes>
+				<li>Doctor</li>
+			</mechEnabledWorkTypes>
 			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>VFE_Mechanoids_Machine</thinkTreeMain>
 			<body>Lancer</body>
@@ -610,7 +643,7 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-<!--
+	<!--
 	<ThingDef ParentName="BaseVFEMachine">
 		<defName>VFE_Mechanoids_Autobuilder</defName>
 		<label>autobuilder</label>
@@ -708,6 +741,7 @@
 			</li>
 		</tools>
 		<race>
+			<allowedOnCaravan>true</allowedOnCaravan>
 			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>VFE_Mechanoids_Raider</thinkTreeMain>
 			<thinkTreeConstant>VFE_Mechanoids_Machine_RiddableConstant</thinkTreeConstant>
@@ -740,11 +774,6 @@
 				<hoursActive>168</hoursActive>
 			</li>
 		</comps>
-		<modExtensions>
-			<li Class="VFE.Mechanoids.MechanoidExtension">
-				<isCaravanRiddable>true</isCaravanRiddable>
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<PawnKindDef ParentName="BaseMechanoidKind">
@@ -839,7 +868,7 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-	
+
 	<ThingDef ParentName="BaseVFEMachine">
 		<defName>VFE_Mechanoids_Autobroadcaster</defName>
 		<label>autobroadcaster</label>
@@ -894,14 +923,14 @@
 			<li Class="VFEMech.CompProperties_Propaganda">
 				<relaxingMusicRadius>15</relaxingMusicRadius>
 				<relaxingThought>VFE_Mechanoids_RelaxingMusic</relaxingThought>
-		
+
 				<inspirationalMusicRadius>15</inspirationalMusicRadius>
 				<inspirationalHediff>VFE_Mechanoids_GlobalWorkSpeed</inspirationalHediff>
-		
+
 				<propagandaRadius>15</propagandaRadius>
 				<propagandaPower>0.01</propagandaPower>
 				<propagandaRate>2500</propagandaRate>
-				
+
 				<recruitmentRate>2500</recruitmentRate>
 				<recruitmentRadius>15</recruitmentRadius>
 				<resistanceSuppressPower>0.5</resistanceSuppressPower>
@@ -927,7 +956,7 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-	
+
 	<HediffDef>
 		<defName>VFE_Mechanoids_GlobalWorkSpeed</defName>
 		<label>inspired</label>
@@ -943,7 +972,7 @@
 			</li>
 		</stages>
 	</HediffDef>
-	
+
 	<ThoughtDef>
 		<defName>VFE_Mechanoids_RelaxingMusic</defName>
 		<durationDays>0.1</durationDays>

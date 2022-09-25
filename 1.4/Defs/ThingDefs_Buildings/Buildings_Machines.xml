@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <ThingDef ParentName="BuildingBase">
     <defName>VFE_Mechanoids_AutocleanerBase</defName>
@@ -60,9 +60,6 @@
       <li Class="CompProperties_Flickable"/>
 	  <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
 		<pawnToSpawn>VFE_Mechanoids_Autocleaner</pawnToSpawn>
-		<allowedWorkTypes>
-			<li>Cleaning</li>
-		</allowedWorkTypes>
 		<extraChargingPower>1400</extraChargingPower>
 		<hoursToRecharge>24</hoursToRecharge>
 	  </li>
@@ -134,9 +131,6 @@
       <li Class="CompProperties_Flickable"/>
 	  <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
 		<pawnToSpawn>VFE_Mechanoids_Autohauler</pawnToSpawn>
-		<allowedWorkTypes>
-			<li>Hauling</li>
-		</allowedWorkTypes>
 		<extraChargingPower>1600</extraChargingPower>
 		<hoursToRecharge>6</hoursToRecharge>
 	  </li>
@@ -207,9 +201,6 @@
       <li Class="CompProperties_Flickable"/>
 	  <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
 		<pawnToSpawn>VFE_Mechanoids_Autominer</pawnToSpawn>
-		<allowedWorkTypes>
-			<li>Mining</li>
-		</allowedWorkTypes>
 		<extraChargingPower>1800</extraChargingPower>
 		<skillLevel>10</skillLevel>
 		<hoursToRecharge>24</hoursToRecharge>
@@ -282,8 +273,6 @@
       <li Class="CompProperties_Flickable"/>
 	  <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
 		<pawnToSpawn>VFE_Mechanoids_Combat</pawnToSpawn>
-		<allowedWorkTypes>
-		</allowedWorkTypes>
 		<extraChargingPower>1200</extraChargingPower>
 		<spawnWithWeapon>VFE_Gun_CombatMechanoidGun</spawnWithWeapon>
 		<hoursToRecharge>24</hoursToRecharge>
@@ -356,8 +345,6 @@
       <li Class="CompProperties_Flickable"/>
 	  <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
 		<pawnToSpawn>VFE_Mechanoids_Riot</pawnToSpawn>
-		<allowedWorkTypes>
-		</allowedWorkTypes>
 		<extraChargingPower>1600</extraChargingPower>
 		<hoursToRecharge>24</hoursToRecharge>
 	  </li>
@@ -429,8 +416,6 @@
       <li Class="CompProperties_Flickable"/>
 	  <li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
 		<pawnToSpawn>VFE_Mechanoids_Turret</pawnToSpawn>
-		<allowedWorkTypes>
-		</allowedWorkTypes>
 		<extraChargingPower>1600</extraChargingPower>
 		<turret>true</turret>
 		<hoursToRecharge>24</hoursToRecharge>
@@ -649,8 +634,6 @@
 			<li Class="CompProperties_Flickable"/>
 			<li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
 				<pawnToSpawn>VFE_Mechanoids_Autostrider</pawnToSpawn>
-				<allowedWorkTypes>
-				</allowedWorkTypes>
 				<extraChargingPower>1600</extraChargingPower>
 				<hoursToRecharge>12</hoursToRecharge>
 			</li>
@@ -722,9 +705,6 @@
 			<li Class="CompProperties_Flickable"/>
 			<li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
 				<pawnToSpawn>VFE_Mechanoids_AutoMedic</pawnToSpawn>
-				<allowedWorkTypes>
-					<li>Doctor</li>
-				</allowedWorkTypes>
 				<disallowedWorkGivers>
 					<li>DoBillsMedicalHumanOperation</li>
 				</disallowedWorkGivers>
@@ -874,8 +854,6 @@
 			<li Class="CompProperties_Flickable"/>
 			<li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
 				<pawnToSpawn>VFE_Mechanoids_Raider</pawnToSpawn>
-				<allowedWorkTypes>
-				</allowedWorkTypes>
 				<extraChargingPower>1200</extraChargingPower>
 				<spawnWithWeapon>VFE_Gun_RaiderMechanoidGun</spawnWithWeapon>
 				<hoursToRecharge>48</hoursToRecharge>
@@ -949,8 +927,6 @@
 			<li Class="CompProperties_Flickable"/>
 			<li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
 				<pawnToSpawn>VFE_Mechanoids_Autobroadcaster</pawnToSpawn>
-				<allowedWorkTypes>
-				</allowedWorkTypes>
 				<extraChargingPower>1400</extraChargingPower>
 				<hoursToRecharge>24</hoursToRecharge>
 			</li>
@@ -1023,8 +999,6 @@
 			<li Class="CompProperties_Flickable"/>
 			<li Class="VFE.Mechanoids.CompProperties_MachineChargingStation">
 				<pawnToSpawn>VFE_Mechanoids_Pyro</pawnToSpawn>
-				<allowedWorkTypes>
-				</allowedWorkTypes>
 				<extraChargingPower>1200</extraChargingPower>
 				<spawnWithWeapon>VFE_Gun_InfernoSpewerSmall</spawnWithWeapon>
 				<hoursToRecharge>24</hoursToRecharge>
