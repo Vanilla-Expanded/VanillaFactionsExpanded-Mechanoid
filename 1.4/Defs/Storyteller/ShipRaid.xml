@@ -37,99 +37,75 @@
 				<structures>
 					<li>
 						<layout>VFEM_Frigate1</layout>
-						<commonality>1</commonality>
 					</li>
 					<li>
 						<layout>VFEM_Frigate2</layout>
-						<commonality>1</commonality>
 					</li>
 					<li>
 						<layout>VFEM_Frigate3</layout>
-						<commonality>1</commonality>
 					</li>
 					<li>
 						<layout>VFEM_Frigate4</layout>
-						<commonality>1</commonality>
 					</li>
 					<li>
 						<layout>VFEM_Frigate5</layout>
-						<commonality>1</commonality>
 					</li>
 					<li>
 						<layout>VFEM_Frigate6</layout>
-						<commonality>1</commonality>
 					</li>
 					<li>
 						<layout>VFEM_Frigate7</layout>
-						<commonality>1</commonality>
 					</li>
 					<li>
 						<layout>VFEM_Frigate8</layout>
-						<commonality>1</commonality>
 					</li>
 					<li>
 						<layout>VFEM_Frigate9</layout>
-						<commonality>1</commonality>
 					</li>
 					<li>
 						<layout>VFEM_Frigate10</layout>
-						<commonality>1</commonality>
 					</li>
 					<li>
 						<layout>VFEM_Frigate11</layout>
-						<commonality>1</commonality>
 					</li>
 					<li>
 						<layout>VFEM_Frigate12</layout>
-						<commonality>1</commonality>
 					</li>
 					<li>
 						<layout>VFEM_FrigateDLC1</layout>
-						<commonality>1</commonality>
 					</li>
 					<li>
 						<layout>VFEM_FrigateDLC2</layout>
-						<commonality>1</commonality>
 					</li>
 					<li>
 						<layout>VFEM_FrigateDLC3</layout>
-						<commonality>1</commonality>
 					</li>
 					<li>
 						<layout>VFEM_FrigateDLC4</layout>
-						<commonality>1</commonality>
 					</li>
 					<li>
 						<layout>VFEM_FrigateDLC5</layout>
-						<commonality>1</commonality>
 					</li>
 					<li>
 						<layout>VFEM_FrigateDLC6</layout>
-						<commonality>1</commonality>
 					</li>
 					<li>
 						<layout>VFEM_FrigateDLC7</layout>
-						<commonality>1</commonality>
 					</li>
 					<li>
 						<layout>VFEM_FrigateDLC8</layout>
-						<commonality>1</commonality>
 					</li>
 					<li>
 						<layout>VFEM_FrigateDLC9</layout>
-						<commonality>1</commonality>
 					</li>
 					<li>
 						<layout>VFEM_FrigateDLC10</layout>
-						<commonality>1</commonality>
 					</li>
 					<li>
 						<layout>VFEM_FrigateDLC11</layout>
-						<commonality>1</commonality>
 					</li>
 					<li>
 						<layout>VFEM_FrigateDLC12</layout>
-						<commonality>1</commonality>
 					</li>
 					<li>
 						<layout>VFEM_Destroyer1</layout>
@@ -179,7 +155,6 @@
 						<layout>VFEM_Destroyer12</layout>
 						<commonality>0.7</commonality>
 					</li>
-					
 					<li>
 						<layout>VFEM_DestroyerDLC1</layout>
 						<commonality>0.7</commonality>
@@ -229,6 +204,10 @@
 						<commonality>0.7</commonality>
 					</li>
 					<li>
+						<layout>VFEM_Cruiser1</layout>
+						<commonality>0.5</commonality>
+					</li>
+					<li>
 						<layout>VFEM_Cruiser2</layout>
 						<commonality>0.5</commonality>
 					</li>
@@ -272,7 +251,6 @@
 						<layout>VFEM_Cruiser12</layout>
 						<commonality>0.5</commonality>
 					</li>
-					
 					<li>
 						<layout>VFEM_CruiserDLC1</layout>
 						<commonality>0.5</commonality>

@@ -410,7 +410,7 @@
     <thing>VFEM_ProvisionsPackagingFactory_ConveyorOven</thing>
     <rotation>South</rotation>
   </KCSG.SymbolDef>
-  
+
   <KCSG.SymbolDef>
     <defName>VFE_Supercomputer</defName>
     <thing>VFE_Supercomputer</thing>
