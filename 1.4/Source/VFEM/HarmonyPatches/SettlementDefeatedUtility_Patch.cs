@@ -6,13 +6,13 @@ using Verse;
 
 namespace VFEM.HarmonyPatches
 {
-    using System;
-    using System.Linq;
-    using System.Text;
-    using Verse.AI;
-    using VFEMech;
-	[HarmonyPatch(typeof(GenHostility), "AnyHostileActiveThreatTo_NewTemp",
-		new Type[] { typeof(Map), typeof(Faction), typeof(IAttackTarget), typeof(bool), typeof(bool)},
+	using System;
+	using System.Linq;
+	using System.Text;
+	using Verse.AI;
+	using VFEMech;
+	[HarmonyPatch(typeof(GenHostility), "AnyHostileActiveThreatTo",
+		new Type[] { typeof(Map), typeof(Faction), typeof(IAttackTarget), typeof(bool), typeof(bool) },
 		new ArgumentType[] { ArgumentType.Normal, ArgumentType.Normal, ArgumentType.Out, ArgumentType.Normal, ArgumentType.Normal })]
 	internal static class AnyHostileActiveThreatTo_Patch
 	{
@@ -20,26 +20,26 @@ namespace VFEM.HarmonyPatches
 		public static void Postfix(ref bool __result, Map map, Faction faction, ref IAttackTarget threat)
 		{
 			if (!__result && map.ParentFaction?.def == VFEMDefOf.VFE_Mechanoid)
-            {
+			{
 				threat = map.listerThings.ThingsInGroup(ThingRequestGroup.BuildingArtificial)
 					.FirstOrDefault(b => b.Faction?.def == VFEMDefOf.VFE_Mechanoid && b.def.defName.Contains("_Turret_")) as IAttackTarget;
 				__result = threat != null;
-            }
+			}
 		}
 	}
 
 	[HarmonyPatch(typeof(SettlementDefeatUtility), "IsDefeated")]
-    [HarmonyAfter("vanillaexpanded.achievements")]
-    internal static class SettlementDefeatedUtility_Patch
-    {
-        [HarmonyPriority(Priority.Last)]
-        public static void Postfix(Map map, Faction faction, ref bool __result)
-        {
-            if (map.listerThings.ThingsOfDef(VFEMDefOf.VFEM_MissileIncoming).Any()) __result = true;
-            else if (map.mapPawns.SpawnedPawnsInFaction(faction).Any(p => p.Faction?.def == VFEMDefOf.VFE_Mechanoid && GenHostility.IsActiveThreatToPlayer(p))) __result = false;
-            else if (map.listerThings.ThingsInGroup(ThingRequestGroup.BuildingArtificial).Any(b => b.Faction?.def == VFEMDefOf.VFE_Mechanoid && b.def.defName.Contains("_Turret_"))) __result     = false;
-        }
-    }
+	[HarmonyAfter("vanillaexpanded.achievements")]
+	internal static class SettlementDefeatedUtility_Patch
+	{
+		[HarmonyPriority(Priority.Last)]
+		public static void Postfix(Map map, Faction faction, ref bool __result)
+		{
+			if (map.listerThings.ThingsOfDef(VFEMDefOf.VFEM_MissileIncoming).Any()) __result = true;
+			else if (map.mapPawns.SpawnedPawnsInFaction(faction).Any(p => p.Faction?.def == VFEMDefOf.VFE_Mechanoid && GenHostility.IsActiveThreatToPlayer(p))) __result = false;
+			else if (map.listerThings.ThingsInGroup(ThingRequestGroup.BuildingArtificial).Any(b => b.Faction?.def == VFEMDefOf.VFE_Mechanoid && b.def.defName.Contains("_Turret_"))) __result = false;
+		}
+	}
 
 	[HarmonyPatch(typeof(SettlementDefeatUtility), nameof(SettlementDefeatUtility.CheckDefeated))]
 	public class Faction_Patch
@@ -63,15 +63,15 @@ namespace VFEM.HarmonyPatches
 			}
 			Map map = factionBase.Map;
 			if (map == null || !IsDefeated(map, factionBase.Faction))
-            {
-                return;
+			{
+				return;
 			}
 			bool defeated = IsDefeated(map, factionBase.Faction);
 			SettlementDefeatedUtility_Patch.Postfix(map, factionBase.Faction, ref defeated);
 			if (!defeated)
-            {
-                return;
-            }
+			{
+				return;
+			}
 			IdeoUtility.Notify_PlayerRaidedSomeone(map.mapPawns.FreeColonistsSpawned);
 			DestroyedSettlement destroyedSettlement = (DestroyedSettlement)WorldObjectMaker.MakeWorldObject(WorldObjectDefOf.DestroyedSettlement);
 			destroyedSettlement.Tile = factionBase.Tile;
