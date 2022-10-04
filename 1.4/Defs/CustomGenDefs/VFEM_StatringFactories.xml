@@ -12,9 +12,9 @@
         <li>.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,Wall_Steel,.,Wall_Steel,.,Wall_Steel,.,Wall_Steel,Wall_Steel,.,.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Autodoor_Steel,Wall_Steel,.,.,Wall_Steel,Wall_Steel,.,.</li>
         <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
-        <li>.,.,.,.,Wall_Steel,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,.,Wall_Steel,Wall_Steel,Wall_Steel,.,StandingLamp_Red,.,.,.,.,.,.,.,StandingLamp_Red,.,.,.</li>
+        <li>.,.,.,.,Wall_Steel,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,.,Wall_Steel,Wall_Steel,Wall_Steel,.,StandingLamp,.,.,.,.,.,.,.,StandingLamp,.,.,.</li>
         <li>.,.,.,.,Wall_Steel,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,VFEM_HeavyHopper_North,.,.,.,.,.,.,.</li>
-        <li>.,.,.,.,.,.,Wall_Steel,.,StandingLamp_Red,.,.,.,.,.,.,.,.,.,FirefoamPopper,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,Wall_Steel,.,StandingLamp,.,.,.,.,.,.,.,.,.,FirefoamPopper,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,VFEM_HeavyHopper_West,.,.,.,.,.,.,.,.,.,Wall_Steel,.</li>
         <li>.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,Wall_Steel,Wall_Steel,.,Wall_Steel,.,VFEM_HeavyHopper_West,.,.,.,VFEM_ElectronicsFabricationFactory_SteelExtractor_West,.,.,VFEM_HeavyHopper_East,.,.,.,.,.,VFEM_HeavyHopper_East,.,.,VFEM_ElectronicsFabricationFactory_AdvancedAssembler_East,.,.,.,VFEM_HeavyHopper_East,.,.,.,.</li>
@@ -23,7 +23,7 @@
         <li>.,.,.,.,.,.,Wall_Steel,.,VFEM_HeavyHopper_West,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.</li>
         <li>.,.,.,Wall_Steel,Wall_Steel,.,Wall_Steel,.,.,.,.,.,VFEM_ElectronicsFabricationFactory_SteelExtractor_West,.,.,VFEM_HeavyHopper_East,.,.,.,.,.,VFEM_HeavyHopper_East,.,.,.,VFEM_HeavyHopper_South,.,.,.,.,Stool_Steel_East,Wall_Steel,.</li>
         <li>.,.,.,.,Wall_Steel,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Table1x2c_Steel_East,.,.,Wall_Steel,.</li>
-        <li>.,.,.,.,Wall_Steel,.,Wall_Steel,.,StandingLamp_Red,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Stool_Steel_North,StandingLamp_Red,.,Wall_Steel,.</li>
+        <li>.,.,.,.,Wall_Steel,.,Wall_Steel,.,StandingLamp,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Stool_Steel_North,StandingLamp,.,Wall_Steel,.</li>
         <li>.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.</li>
         <li>.,.,.,.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.</li>
         <li>.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
@@ -122,7 +122,7 @@
         <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,Wall_Steel,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,Wall_Steel,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,Wall_Steel,.,.,.,.,.,.,.,.</li>
-        <li>.,.,.,.,.,.,.,.,Wall_Steel,StandingLamp_Red,.,.,.,.,.,.,.,.,.,.,.,StandingLamp_Red,Wall_Steel,.,Wall_Steel,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,Wall_Steel,StandingLamp,.,.,.,.,.,.,.,.,.,.,.,StandingLamp,Wall_Steel,.,Wall_Steel,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,Wall_Steel,.,Wall_Steel,.,.,.,.,.,VFEM_HeavyHopper_North,.,.,.,.,.,PowerSwitch,.,Autodoor_Steel,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,Wall_Steel,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,Wall_Steel,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,Wall_Steel,.,.,.,.,.,.,.,.</li>
@@ -134,7 +134,7 @@
         <li>.,.,.,.,.,Wall_Steel,Battery_North,.,Wall_Steel,.,.,.,.,.,VFEM_HeavyHopper_South,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,Wall_Steel,.,.,Wall_Steel,.,.,.,.,.,.,.,Shelf_Steel_South,.,.,Shelf_Steel_South,Stool_Steel_North,.,Wall_Steel,.,.,.,Wall_Steel,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,Wall_Steel,Wall_Steel,.,Wall_Steel,.,.,.,.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,.,.,.,.,.,.,.,.</li>
-        <li>.,.,.,.,.,.,.,.,Wall_Steel,.,.,VFEM_HeavyHopper_North,VFEM_HeavyHopper_North,VFEM_HeavyHopper_North,.,.,.,.,.,.,.,.,StandingLamp_Red,Wall_Steel,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,Wall_Steel,.,.,VFEM_HeavyHopper_North,VFEM_HeavyHopper_North,VFEM_HeavyHopper_North,.,.,.,.,.,.,.,.,StandingLamp,Wall_Steel,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,FirefoamPopper,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,Wall_Steel,.,Wall_Steel,.,.,.,.,.,.,.,.,.,VFEM_HeavyHopper_North,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,Wall_Steel,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
@@ -143,7 +143,7 @@
         <li>.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,VFEM_HeavyHopper_East,.,.,.,VFEM_MunitionsAndArmamentFactory_ArtilleryFoundry_South,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.</li>
-        <li>.,.,.,.,.,.,.,.,Wall_Steel,StandingLamp_Red,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,Wall_Steel,StandingLamp,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,.,Wall_Steel,Wall_Steel,Wall_Steel,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
@@ -239,7 +239,7 @@
         <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,.,.,Wall_Steel,Door_Steel,Wall_Steel,Door_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,VFEM_HeavyHopper_North,.,.,.,.,VFEM_HeavyHopper_North,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.</li>
-        <li>.,.,.,.,.,.,.,.,.,.,.,StandingLamp_Red,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,StandingLamp,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,.,.,Wall_Steel,.,Heater,.,.,.,.,.,.,.,.,Wall_Steel,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,VFEM_WearablesAndTextileFactory_SynthreadSynthesizer_South,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.</li>
@@ -250,7 +250,7 @@
         <li>.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,VFEM_WearablesAndTextileFactory_AutoLoom_South,.,.,.,.,.,Wall_Steel,Wall_Steel,.,Grave_South,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.</li>
-        <li>.,.,.,.,.,.,.,.,.,Wall_Steel,.,StandingLamp_Red,.,.,.,.,.,.,StandingLamp_Red,.,Wall_Steel,Wall_Steel,Wall_Steel,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,Wall_Steel,.,StandingLamp,.,.,.,.,.,.,StandingLamp,.,Wall_Steel,Wall_Steel,Wall_Steel,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,VFEM_HeavyHopper_North,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,.,.,.,.,Wall_Steel,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
@@ -384,7 +384,7 @@
         <li>.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.</li>
         <li>.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,.,.,.,.,.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,.,.,.,.</li>
         <li>.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,HydroponicsBasin_East,.,.,.,.,.,Wall_Steel,.,.,.,.,.</li>
-        <li>.,.,.,Wall_Steel,.,StandingLamp_Red,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,StandingLamp_Red,.,Wall_Steel,.,.,.,.,.</li>
+        <li>.,.,.,Wall_Steel,.,StandingLamp,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,StandingLamp,.,Wall_Steel,.,.,.,.,.</li>
         <li>.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.</li>
         <li>.,.,.,Wall_Steel,.,.,VFEM_HeavyHopper_West,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.</li>
         <li>.,.,.,Autodoor_Steel,.,.,VFEM_HeavyHopper_West,.,.,.,VFEM_ProvisionsPackagingFactory_MeatGrinder_East,.,.,.,VFEM_HeavyHopper_East,.,.,.,VFEM_ProvisionsPackagingFactory_ConveyorOven_West,.,.,VFEM_HeavyHopper_East,.,.,.,Sandbags_Cloth,.,Wall_Steel,.,.,.,.,.</li>
@@ -394,7 +394,7 @@
         <li>.,.,.,Autodoor_Steel,.,.,VFEM_HeavyHopper_West,.,.,.,VFEM_ProvisionsPackagingFactory_MeatGrinder_East,.,.,.,VFEM_HeavyHopper_East,.,.,.,VFEM_ProvisionsPackagingFactory_ConveyorOven_West,.,.,VFEM_HeavyHopper_East,.,.,.,.,.,Wall_Steel,.,.,.,.,.</li>
         <li>.,.,.,Wall_Steel,.,.,VFEM_HeavyHopper_West,.,.,.,.,.,.,.,VFEM_HeavyHopper_West,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.</li>
         <li>.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,FirefoamPopper,.,.,.,.,Wall_Steel,.,.,.,.,.</li>
-        <li>.,.,.,Wall_Steel,.,StandingLamp_Red,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,StandingLamp_Red,.,Wall_Steel,.,.,.,.,.</li>
+        <li>.,.,.,Wall_Steel,.,StandingLamp,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,StandingLamp,.,Wall_Steel,.,.,.,.,.</li>
         <li>.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.</li>
         <li>.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,.,.,.,.</li>
         <li>.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.</li>
@@ -495,7 +495,7 @@
         <li>.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,Wall_Steel,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Autodoor_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,PowerSwitch,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,Wall_Steel,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,Autodoor_Steel,.,.,.,.,.,.,.,.,.,.,.</li>
-        <li>.,.,.,.,.,Wall_Steel,.,.,Wall_Steel,.,StandingLamp_Red,.,.,.,.,.,.,.,.,.,StandingLamp_Red,Wall_Steel,.,.,Wall_Steel,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,Wall_Steel,.,.,Wall_Steel,.,StandingLamp,.,.,.,.,.,.,.,.,.,StandingLamp,Wall_Steel,.,.,Wall_Steel,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,Wall_Steel,.,.,Wall_Steel,.,.,.,VFEM_HeavyHopper_North,.,.,.,.,VFEM_HeavyHopper_North,.,.,.,Wall_Steel,.,.,Wall_Steel,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,Wall_Steel,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,Wall_Steel,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,Wall_Steel,.,.,.,.,.,.,.,.,.</li>
@@ -602,7 +602,7 @@
         <li>.,.,.,.,.,.,.,.,.,Wall_Steel,.,Wall_Steel,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,.,Wall_Steel,Wall_Steel,Wall_Steel,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,VFEM_HeavyHopper_North,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.</li>
-        <li>.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,StandingLamp_Red,.,Wall_Steel,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,StandingLamp,.,Wall_Steel,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Autodoor_Steel,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,VFEM_MedicinalCompoundingFactory_NeutroamineInfuser_North,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
@@ -617,8 +617,8 @@
         <li>.,.,.,.,.,.,.,Wall_Steel,.,.,.,VFEM_MedicinalCompoundingFactory_NeutroamineInfuser_North,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
-        <li>.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,StandingLamp_Red,.,.,.,.,.,.,.,.,.,.,.</li>
-        <li>.,.,.,.,.,.,.,Wall_Steel,StandingLamp_Red,.,.,VFEM_HeavyHopper_South,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,StandingLamp,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,Wall_Steel,StandingLamp,.,.,VFEM_HeavyHopper_South,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,.,.,.,.,Wall_Steel,Wall_Steel,.,.,Wall_Steel,Wall_Steel,.,Wall_Steel,.,Wall_Steel,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
@@ -719,7 +719,7 @@
         <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Autodoor_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,.,.,.,.,.,.</li>
-        <li>.,.,.,.,Wall_Steel,StandingLamp_Red,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,StandingLamp_Red,Wall_Steel,.,.,Barricade_Steel,.,.,.,.</li>
+        <li>.,.,.,.,Wall_Steel,StandingLamp,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,StandingLamp,Wall_Steel,.,.,Barricade_Steel,.,.,.,.</li>
         <li>.,.,.,.,Wall_Steel,.,.,.,.,VFEM_HeavyHopper_North,.,.,.,.,VFEM_HeavyHopper_North,.,.,.,.,.,.,.,.,.,.,.,.,.,Barricade_Steel,.,.,.,.</li>
         <li>.,Barricade_Steel,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Barricade_Steel,.,.,.,.</li>
         <li>.,Barricade_Steel,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
@@ -730,8 +730,8 @@
         <li>.,.,.,.,Wall_Steel,.,.,.,VFEM_HeavyHopper_South,VFEM_HeavyHopper_South,VFEM_HeavyHopper_South,.,Wall_Steel,VFEM_HeavyHopper_South,VFEM_HeavyHopper_South,VFEM_HeavyHopper_South,Wall_Steel,.,VFEM_HeavyHopper_South,VFEM_HeavyHopper_South,VFEM_HeavyHopper_South,.,.,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,VFEM_MasonryAndMetallicsFactory_AutomaticDrill_North,.,.,.,.,VFEM_MasonryAndMetallicsFactory_AutomaticDrill_North,.,.,.,Battery_East,.,Wall_Steel,.,.,.,.,.,.,.</li>
-        <li>.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,StandingLamp_Red,Wall_Steel,.,.,.,.,.,.,.</li>
-        <li>.,.,.,.,Wall_Steel,StandingLamp_Red,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Battery_East,.,Wall_Steel,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,StandingLamp,Wall_Steel,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,Wall_Steel,StandingLamp,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Battery_East,.,Wall_Steel,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Barricade_Steel,.,.,.,.</li>
@@ -819,7 +819,7 @@
         <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Autodoor_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Autodoor_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
-        <li>.,.,.,.,.,.,Wall_Steel,StandingLamp_Red,.,.,.,.,.,StandingLamp_Red,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,Wall_Steel,StandingLamp,.,.,.,.,.,StandingLamp,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,Wall_Steel,.,.,.,Table1x2c_Steel_North,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,Wall_Steel,.,.,Stool_Steel_North,.,Stool_Steel_East,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,Wall_Steel,.,.,.,.,CollapsedRocks_North,CollapsedRocks_North,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
@@ -841,7 +841,7 @@
         <li>.,.,.,.,.,.,Wall_Steel,.,.,.,VFEM_HeavyHopper_South,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,CollapsedRocks_North,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
-        <li>.,.,.,.,.,.,Wall_Steel,StandingLamp_Red,.,.,.,.,.,StandingLamp_Red,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,Wall_Steel,StandingLamp,.,.,.,.,.,StandingLamp,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,.,.,.,.,.,.,.,Sandbags_Cloth,Sandbags_Cloth,Sandbags_Cloth,.,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,Sandbags_Cloth,.,.,.,.,.,.</li>
         <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Turret_Autocannon,.,.,.,.,.,.,.,.,.</li>
