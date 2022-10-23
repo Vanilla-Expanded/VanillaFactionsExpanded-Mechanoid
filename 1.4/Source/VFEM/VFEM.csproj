@@ -12,6 +12,7 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+	<LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>false</DebugSymbols>
@@ -301,6 +302,7 @@
     <Compile Include="Buildings\Building_AutoSower.cs" />
     <Compile Include="Buildings\Building_IndustrialApiary.cs" />
     <Compile Include="Buildings\Building_IndoctrinationPod.cs" />
+    <Compile Include="Buildings\Command_SetPlantToGrowAutoSower.cs" />
     <Compile Include="JobDrivers\JobDriver_EnterIndoctrinationPod.cs" />
     <Compile Include="Buildings\MechShipPart.cs" />
     <Compile Include="Buildings\HullRepairModule.cs" />

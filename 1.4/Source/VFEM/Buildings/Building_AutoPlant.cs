@@ -1,9 +1,5 @@
 ﻿using RimWorld;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 using Verse.Sound;
@@ -11,18 +7,15 @@ using Verse.Sound;
 namespace VFE.Mechanoids.Buildings
 {
     [StaticConstructorOnStartup]
-    class Building_AutoPlant : Building
+    internal class Building_AutoPlant : Building
     {
         public int range = 7;
         public bool running = false;
         public float offset = 0;
-
-        static float speedPerTick = 0.001f;
+        private static readonly float speedPerTick = 0.001f;
         protected bool blockedByTree = false;
-
-        static Graphic baseGraphic = GraphicDatabase.Get(typeof(Graphic_Multi), "Things/Buildings/MachineryBases/AutoMachineryBase", ShaderDatabase.Cutout, new Vector2(7, 2), Color.white, Color.white);
-
-        Sustainer sustainer;
+        private static readonly Graphic baseGraphic = GraphicDatabase.Get(typeof(Graphic_Multi), "Things/Buildings/MachineryBases/AutoMachineryBase", ShaderDatabase.Cutout, new Vector2(7, 2), Color.white, Color.white);
+        private Sustainer sustainer;
 
         private CompPowerTrader powerComp = null;
 
@@ -33,31 +26,35 @@ namespace VFE.Mechanoids.Buildings
 
             if (range > 2)
             {
-                Command_Action command_Action = new Command_Action();
-                command_Action.action = delegate
+                Command_Action command_Action = new Command_Action
+                {
+                    action = delegate
                 {
                     SoundDefOf.DragSlider.PlayOneShotOnCamera();
                     range--;
-                    MoteMaker.ThrowText(this.TrueCenter() + new Vector3(0.5f, 0f, 0.5f), this.Map, (range-1)+" tiles", Color.white);
+                    MoteMaker.ThrowText(this.TrueCenter() + new Vector3(0.5f, 0f, 0.5f), Map, range - 1 + " tiles", Color.white);
+                },
+                    defaultLabel = "VFEMechLowerRange".Translate(),
+                    defaultDesc = "VFEMechLowerRangeDesc".Translate(),
+                    icon = ContentFinder<Texture2D>.Get("UI/DecreaseArea")
                 };
-                command_Action.defaultLabel = "VFEMechLowerRange".Translate();
-                command_Action.defaultDesc = "VFEMechLowerRangeDesc".Translate();
-                command_Action.icon = ContentFinder<Texture2D>.Get("UI/DecreaseArea");
                 gizmos.Add(command_Action);
             }
 
             if (range < 31)
             {
-                Command_Action command_Action2 = new Command_Action();
-                command_Action2.action = delegate
+                Command_Action command_Action2 = new Command_Action
+                {
+                    action = delegate
                 {
                     SoundDefOf.DragSlider.PlayOneShotOnCamera();
                     range++;
-                    MoteMaker.ThrowText(this.TrueCenter() + new Vector3(0.5f, 0f, 0.5f), this.Map, (range-1) + " tiles", Color.white);
+                    MoteMaker.ThrowText(this.TrueCenter() + new Vector3(0.5f, 0f, 0.5f), Map, range - 1 + " tiles", Color.white);
+                },
+                    defaultLabel = "VFEMechRaiseRange".Translate(),
+                    defaultDesc = "VFEMechRaiseRangeDesc".Translate(),
+                    icon = ContentFinder<Texture2D>.Get("UI/IncreaseArea")
                 };
-                command_Action2.defaultLabel = "VFEMechRaiseRange".Translate();
-                command_Action2.defaultDesc = "VFEMechRaiseRangeDesc".Translate();
-                command_Action2.icon = ContentFinder<Texture2D>.Get("UI/IncreaseArea");
                 gizmos.Add(command_Action2);
             }
 
@@ -74,8 +71,8 @@ namespace VFE.Mechanoids.Buildings
                 initiate.defaultDesc = "VFEMechStartMachineDesc".Translate();
                 initiate.icon = ContentFinder<Texture2D>.Get("UI/MachineryOn");
             }
-            initiate.toggleAction = delegate { running = !running;  if (running) { TryStartSustainer(); } };
-            initiate.isActive = ()=>running;
+            initiate.toggleAction = delegate { running = !running; if (running) { TryStartSustainer(); } };
+            initiate.isActive = () => running;
             gizmos.Add(initiate);
 
             return gizmos;
@@ -89,23 +86,36 @@ namespace VFE.Mechanoids.Buildings
                 if (running)
                 {
                     if (sustainer != null && !sustainer.Ended)
+                    {
                         sustainer.Maintain();
+                    }
                     else
+                    {
                         TryStartSustainer();
+                    }
 
                     powerComp.powerOutputInt = -1900;
                     bool shouldCheck = false;
                     if (offset == 0)
+                    {
                         shouldCheck = true;
+                    }
+
                     int floor = Mathf.FloorToInt(offset);
                     offset += speedPerTick;
                     if (Mathf.FloorToInt(offset) != floor)
-                        shouldCheck = true;
-                    if(shouldCheck)
                     {
-                        if(offset!=speedPerTick && offset!=speedPerTick+1) //Ignore cell 0
+                        shouldCheck = true;
+                    }
+
+                    if (shouldCheck)
+                    {
+                        if (offset != speedPerTick && offset != speedPerTick + 1) //Ignore cell 0
+                        {
                             DoWorkOnCells();
-                        if(offset<range && !CheckCellsClear())
+                        }
+
+                        if (offset < range && !CheckCellsClear())
                         {
                             Messages.Message("VFEMechMachineHitObstacle".Translate(), this, MessageTypeDefOf.CautionInput);
                             running = false;
@@ -120,19 +130,27 @@ namespace VFE.Mechanoids.Buildings
                 else if (offset > 0)
                 {
                     if (sustainer != null && !sustainer.Ended)
+                    {
                         sustainer.Maintain();
+                    }
                     else
+                    {
                         TryStartSustainer(); // Necessary for startups where the machine runs in reverse
+                    }
 
                     offset -= speedPerTick;
                     if (offset < 0)
+                    {
                         offset = 0;
+                    }
                 }
                 else
                 {
                     powerComp.powerOutputInt = -powerComp.Props.PowerConsumption;
                     if (sustainer != null && !sustainer.Ended)
+                    {
                         sustainer.End();
+                    }
                 }
             }
             else if (sustainer != null && !sustainer.Ended)
@@ -141,81 +159,107 @@ namespace VFE.Mechanoids.Buildings
             }
         }
 
-        void DoWorkOnCells()
+        private void DoWorkOnCells()
         {
-            if (this.Rotation == Rot4.East || this.Rotation == Rot4.West)
+            if (Rotation == Rot4.East || Rotation == Rot4.West)
             {
-                for(int z=this.Position.z - 3;z<=this.Position.z + 3; z++)
+                for (int z = Position.z - 3; z <= Position.z + 3; z++)
                 {
-                    if(this.Rotation==Rot4.East)
-                        DoWorkOnCell(new IntVec3(this.Position.x + Mathf.FloorToInt(offset), 0, z));
+                    if (Rotation == Rot4.East)
+                    {
+                        DoWorkOnCell(new IntVec3(Position.x + Mathf.FloorToInt(offset), 0, z));
+                    }
                     else
-                        DoWorkOnCell(new IntVec3(this.Position.x - Mathf.FloorToInt(offset), 0, z));
+                    {
+                        DoWorkOnCell(new IntVec3(Position.x - Mathf.FloorToInt(offset), 0, z));
+                    }
                 }
             }
             else
             {
-                for (int x = this.Position.x - 3; x <= this.Position.x + 3; x++)
+                for (int x = Position.x - 3; x <= Position.x + 3; x++)
                 {
-                    if(this.Rotation==Rot4.North)
-                        DoWorkOnCell(new IntVec3(x, 0, this.Position.z + Mathf.FloorToInt(offset)));
+                    if (Rotation == Rot4.North)
+                    {
+                        DoWorkOnCell(new IntVec3(x, 0, Position.z + Mathf.FloorToInt(offset)));
+                    }
                     else
-                        DoWorkOnCell(new IntVec3(x, 0, this.Position.z - Mathf.FloorToInt(offset)));
+                    {
+                        DoWorkOnCell(new IntVec3(x, 0, Position.z - Mathf.FloorToInt(offset)));
+                    }
                 }
             }
         }
 
-        bool CheckCellsClear()
+        private bool CheckCellsClear()
         {
-            if (this.Rotation == Rot4.East || this.Rotation == Rot4.West)
+            if (Rotation == Rot4.East || Rotation == Rot4.West)
             {
-                for (int z = this.Position.z - 3; z <= this.Position.z + 3; z++)
+                for (int z = Position.z - 3; z <= Position.z + 3; z++)
                 {
-                    if (this.Rotation == Rot4.East && !CheckCell(new IntVec3(this.Position.x + Mathf.FloorToInt(offset+2), 0, z)))
+                    if (Rotation == Rot4.East && !CheckCell(new IntVec3(Position.x + Mathf.FloorToInt(offset + 2), 0, z)))
+                    {
                         return false;
-                    else if (this.Rotation == Rot4.West && !CheckCell(new IntVec3(this.Position.x - Mathf.FloorToInt(offset+2), 0, z)))
+                    }
+                    else if (Rotation == Rot4.West && !CheckCell(new IntVec3(Position.x - Mathf.FloorToInt(offset + 2), 0, z)))
+                    {
                         return false;
+                    }
                 }
             }
             else
             {
-                for (int x = this.Position.x - 3; x <= this.Position.x + 3; x++)
+                for (int x = Position.x - 3; x <= Position.x + 3; x++)
                 {
-                    if (this.Rotation == Rot4.North && !CheckCell(new IntVec3(x, 0, this.Position.z + Mathf.FloorToInt(offset+2))))
+                    if (Rotation == Rot4.North && !CheckCell(new IntVec3(x, 0, Position.z + Mathf.FloorToInt(offset + 2))))
+                    {
                         return false;
-                    else if (this.Rotation == Rot4.South && !CheckCell(new IntVec3(x, 0, this.Position.z - Mathf.FloorToInt(offset+2))))
+                    }
+                    else if (Rotation == Rot4.South && !CheckCell(new IntVec3(x, 0, Position.z - Mathf.FloorToInt(offset + 2))))
+                    {
                         return false;
+                    }
                 }
             }
             return true;
         }
 
-        bool CheckCell(IntVec3 cell)
+        private bool CheckCell(IntVec3 cell)
         {
-            foreach(Thing t in cell.GetThingList(this.Map))
+            foreach (Thing t in cell.GetThingList(Map))
             {
-                if (t!=this && t.def.passability!=Traversability.Standable && (t.def.plant == null || blockedByTree))
+                if (t != this && t.def.passability != Traversability.Standable && (t.def.plant == null || blockedByTree))
+                {
                     return false;
+                }
             }
             return true;
         }
 
         public override Vector3 DrawPos => base.DrawPos + OffsetDrawPos();
-        Vector3 OffsetDrawPos()
+
+        private Vector3 OffsetDrawPos()
         {
-            if (this.Rotation == Rot4.East)
-                return new Vector3(offset, 0.1f, 0);
-            else if (this.Rotation == Rot4.West)
-                return new Vector3(-offset, 0.1f, 0);
-            else if (this.Rotation == Rot4.North)
-                return new Vector3(0, 0.1f, offset);
-            return new Vector3(0, 0.1f, -offset);
+            if (Rotation == Rot4.East)
+            {
+                return new Vector3(offset, 1f, 0);
+            }
+            else if (Rotation == Rot4.West)
+            {
+                return new Vector3(-offset, 1f, 0);
+            }
+            else if (Rotation == Rot4.North)
+            {
+                return new Vector3(0, 1f, offset);
+            }
+
+            return new Vector3(0, 1f, -offset);
         }
 
         public override void Draw()
         {
             base.Draw();
-            baseGraphic.Draw(base.DrawPos, this.Rotation, this);
+            baseGraphic.Draw(base.DrawPos, Rotation, this);
         }
 
         protected virtual void DoWorkOnCell(IntVec3 cell)
@@ -231,10 +275,13 @@ namespace VFE.Mechanoids.Buildings
             Scribe_Values.Look<float>(ref offset, "offset");
         }
 
-        bool TryStartSustainer()
+        private bool TryStartSustainer()
         {
             if (sustainer != null)
+            {
                 sustainer.End();
+            }
+
             SoundInfo soundInfo = SoundInfo.InMap(this);
             sustainer = SoundDef.Named("GeothermalPlant_Ambience").TrySpawnSustainer(soundInfo);
             return sustainer != null;

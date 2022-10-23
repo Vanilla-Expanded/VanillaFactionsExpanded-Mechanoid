@@ -36,16 +36,8 @@ namespace VFEMech
                 radii[k] = list[k].LengthHorizontal;
             }
             AccessTools.Field(typeof(GenRadial), "RadialPatternRadii").SetValue(null, radii);
-
-
             Harmony harmony = new Harmony("OskarPotocki.VanillaFactionsExpandedMechanoids");
             harmony.PatchAll();
-        }
-
-        public static bool PreventDestructivePrefix(ref bool __result)
-        {
-            __result = true;
-            return false;
         }
     }
 }
