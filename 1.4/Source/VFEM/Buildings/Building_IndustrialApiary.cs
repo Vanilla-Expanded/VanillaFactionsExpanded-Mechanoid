@@ -145,7 +145,7 @@ namespace VFEMech
             {
                 foreach (Thing item in cell.GetThingList(this.Map))
                 {
-                    if (item.def.plant != null && item.def.plant.purpose == PlantPurpose.Beauty)
+                    if (item.def.plant != null && (item.def.plant.purpose == PlantPurpose.Beauty || item.def.defName == "VCE_Blueberry"))
                     {
                         flowerCount++;
                     }
