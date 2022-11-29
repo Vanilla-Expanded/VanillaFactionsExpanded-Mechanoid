@@ -644,27 +644,11 @@
 										<masterworkQualityAgeDaysThreshold>22</masterworkQualityAgeDaysThreshold>
 										<legendaryQualityAgeDaysThreshold>37</legendaryQualityAgeDaysThreshold>
 									</ItemProcessor.CombinationDef>
-								</value>
-							</li>
-						</operations>
-					</match>
-				</li>
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Forsakens: Fauna</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<success>Always</success>
-						<operations>
-							<li Class="PatchOperationAdd">
-								<success>Always</success>
-								<xpath>/Defs</xpath>
-								<value>
 									<ItemProcessor.CombinationDef>
 										<defName>VFEM_IndustrialCheesePress_NightMilk</defName>
 										<building>VFEM_IndustrialCheesePress</building>
 										<items>
-											<li>FO_NightMilk</li>
+											<li>AA_NightMilk</li>
 										</items>
 										<amount>
 											<li>50</li>
@@ -687,6 +671,7 @@
 						</operations>
 					</match>
 				</li>
+				
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Vanilla Genetics Expanded</li>
