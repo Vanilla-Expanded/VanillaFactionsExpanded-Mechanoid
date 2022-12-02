@@ -62,7 +62,7 @@
 		<defName>VFE_Mechanoids_Autocleaner</defName>
 		<label>autocleaner</label>
 		<race>VFE_Mechanoids_Autocleaner</race>
-		<combatPower>99999</combatPower>
+		<combatPower>30</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -137,7 +137,7 @@
 		<defName>VFE_Mechanoids_Autohauler</defName>
 		<label>autohauler</label>
 		<race>VFE_Mechanoids_Autohauler</race>
-		<combatPower>99999</combatPower>
+		<combatPower>30</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -213,7 +213,7 @@
 		<defName>VFE_Mechanoids_Autominer</defName>
 		<label>autominer</label>
 		<race>VFE_Mechanoids_Autominer</race>
-		<combatPower>99999</combatPower>
+		<combatPower>50</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -287,7 +287,7 @@
 		<defName>VFE_Mechanoids_Combat</defName>
 		<label>combat mechanoid</label>
 		<race>VFE_Mechanoids_Combat</race>
-		<combatPower>99999</combatPower>
+		<combatPower>100</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -373,7 +373,7 @@
 		<defName>VFE_Mechanoids_Riot</defName>
 		<label>riot mechanoid</label>
 		<race>VFE_Mechanoids_Riot</race>
-		<combatPower>99999</combatPower>
+		<combatPower>150</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -447,7 +447,7 @@
 		<defName>VFE_Mechanoids_Turret</defName>
 		<label>mobile turret</label>
 		<race>VFE_Mechanoids_Turret</race>
-		<combatPower>99999</combatPower>
+		<combatPower>100</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -523,7 +523,7 @@
 		<defName>VFE_Mechanoids_Autostrider</defName>
 		<label>autostrider</label>
 		<race>VFE_Mechanoids_Autostrider</race>
-		<combatPower>99999</combatPower>
+		<combatPower>100</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -600,7 +600,7 @@
 		<defName>VFE_Mechanoids_AutoMedic</defName>
 		<label>auto-medic</label>
 		<race>VFE_Mechanoids_AutoMedic</race>
-		<combatPower>99999</combatPower>
+		<combatPower>50</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -751,7 +751,7 @@
 		<defName>VFE_Mechanoids_Raider</defName>
 		<label>raider mechanoid</label>
 		<race>VFE_Mechanoids_Raider</race>
-		<combatPower>99999</combatPower>
+		<combatPower>150</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -825,7 +825,7 @@
 		<defName>VFE_Mechanoids_Pyro</defName>
 		<label>pyro mechanoid</label>
 		<race>VFE_Mechanoids_Pyro</race>
-		<combatPower>99999</combatPower>
+		<combatPower>200</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -914,7 +914,7 @@
 		<defName>VFE_Mechanoids_Autobroadcaster</defName>
 		<label>autobroadcaster</label>
 		<race>VFE_Mechanoids_Autobroadcaster</race>
-		<combatPower>99999</combatPower>
+		<combatPower>50</combatPower>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
