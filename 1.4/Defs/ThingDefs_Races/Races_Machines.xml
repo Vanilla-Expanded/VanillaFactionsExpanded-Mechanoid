@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+	<ThingDef ParentName="BaseMechanoid" Name="BaseVFEMachine" Abstract="True">
+		<thingClass>VFEMech.Machine</thingClass>
+	</ThingDef>
+
 	<ThingDef ParentName="BaseVFEMachine">
 		<defName>VFE_Mechanoids_Autocleaner</defName>
 		<label>autocleaner</label>
