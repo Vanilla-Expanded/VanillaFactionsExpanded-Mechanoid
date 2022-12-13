@@ -117,11 +117,19 @@ namespace VFEMech
             for (var i = givenHediffs.Count - 1; i >= 0; i--)
             {
                 var hediff = givenHediffs[i];
-                if (!shouldWork || !this.parent.Spawned || this.parent.Destroyed || hediff.pawn.Position.DistanceTo(this.parent.Position) > this.Props.propagandaRadius)
+                if (hediff != null)
                 {
-                    hediff.pawn.health.RemoveHediff(hediff);
+                    if (!shouldWork || !this.parent.Spawned || this.parent.Destroyed || hediff.pawn.Position.DistanceTo(this.parent.Position) > this.Props.propagandaRadius)
+                    {
+                        hediff.pawn.health.RemoveHediff(hediff);
+                        givenHediffs.RemoveAt(i);
+                    }
+                }
+                else
+                {
                     givenHediffs.RemoveAt(i);
                 }
+
             }
         }
 
