@@ -21,6 +21,7 @@
 			<lifeExpectancy>2500</lifeExpectancy>
 			<bloodDef>Filth_MachineBits</bloodDef>
 		</race>
+		<allowInMechClusters>false</allowInMechClusters>
 	</ThingDef>
 
 	<PawnKindDef Name="VFE_AdvancedMechanoidKind" Abstract="True">

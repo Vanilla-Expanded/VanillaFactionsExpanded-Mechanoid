@@ -12,7 +12,7 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
-	<LangVersion>latest</LangVersion>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>false</DebugSymbols>
@@ -322,7 +322,6 @@
     <Compile Include="GenSteps\GenStep_MechanoidStorage.cs" />
     <Compile Include="HarmonyPatches\ConnectsToRoofHolder_Patch.cs" />
     <Compile Include="HarmonyPatches\Explosion_Patch.cs" />
-    <Compile Include="HarmonyPatches\MechSpawn_Patch.cs" />
     <Compile Include="HarmonyPatches\Patch_AffectRelationsOnAttacked.cs" />
     <Compile Include="HarmonyPatches\ShouldRemoveMapNow_Patch.cs" />
     <Compile Include="HarmonyPatches\Building_TurretGun_Patch.cs" />

@@ -30,6 +30,7 @@
 				<wakeUpSound>MechanoidsWakeUp</wakeUpSound>
 			</li>
 		</comps>
+		<allowInMechClusters>false</allowInMechClusters>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseVFEMachine">
