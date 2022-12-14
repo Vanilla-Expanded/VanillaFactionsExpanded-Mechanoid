@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
+	
+	<PawnKindDef Name="VFEMachineBase" Abstract="True">
+		<allowInMechClusters>false</allowInMechClusters>
+	</PawnKindDef>
+	
 	<ThingDef ParentName="BasePawn" Name="BaseVFEMachine" Abstract="True">
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<thingClass>VFEMech.Machine</thingClass>
@@ -30,7 +34,6 @@
 				<wakeUpSound>MechanoidsWakeUp</wakeUpSound>
 			</li>
 		</comps>
-		<allowInMechClusters>false</allowInMechClusters>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseVFEMachine">
@@ -90,7 +93,7 @@
 		</comps>
 	</ThingDef>
 
-	<PawnKindDef ParentName="BaseMechanoidKind">
+	<PawnKindDef ParentName="VFEMachineBase">
 		<defName>VFE_Mechanoids_Autocleaner</defName>
 		<label>autocleaner</label>
 		<race>VFE_Mechanoids_Autocleaner</race>
@@ -165,7 +168,7 @@
 		</comps>
 	</ThingDef>
 
-	<PawnKindDef ParentName="BaseMechanoidKind">
+	<PawnKindDef ParentName="VFEMachineBase">
 		<defName>VFE_Mechanoids_Autohauler</defName>
 		<label>autohauler</label>
 		<race>VFE_Mechanoids_Autohauler</race>
@@ -241,7 +244,7 @@
 		</comps>
 	</ThingDef>
 
-	<PawnKindDef ParentName="BaseMechanoidKind">
+	<PawnKindDef ParentName="VFEMachineBase">
 		<defName>VFE_Mechanoids_Autominer</defName>
 		<label>autominer</label>
 		<race>VFE_Mechanoids_Autominer</race>
@@ -315,7 +318,7 @@
 		</comps>
 	</ThingDef>
 
-	<PawnKindDef ParentName="BaseMechanoidKind">
+	<PawnKindDef ParentName="VFEMachineBase">
 		<defName>VFE_Mechanoids_Combat</defName>
 		<label>combat mechanoid</label>
 		<race>VFE_Mechanoids_Combat</race>
@@ -401,7 +404,7 @@
 		</comps>
 	</ThingDef>
 
-	<PawnKindDef ParentName="BaseMechanoidKind">
+	<PawnKindDef ParentName="VFEMachineBase">
 		<defName>VFE_Mechanoids_Riot</defName>
 		<label>riot mechanoid</label>
 		<race>VFE_Mechanoids_Riot</race>
@@ -475,7 +478,7 @@
 		</comps>
 	</ThingDef>
 
-	<PawnKindDef ParentName="BaseMechanoidKind">
+	<PawnKindDef ParentName="VFEMachineBase">
 		<defName>VFE_Mechanoids_Turret</defName>
 		<label>mobile turret</label>
 		<race>VFE_Mechanoids_Turret</race>
@@ -551,7 +554,7 @@
 		</comps>
 	</ThingDef>
 
-	<PawnKindDef ParentName="BaseMechanoidKind">
+	<PawnKindDef ParentName="VFEMachineBase">
 		<defName>VFE_Mechanoids_Autostrider</defName>
 		<label>autostrider</label>
 		<race>VFE_Mechanoids_Autostrider</race>
@@ -628,7 +631,7 @@
 		</comps>
 	</ThingDef>
 
-	<PawnKindDef ParentName="BaseMechanoidKind">
+	<PawnKindDef ParentName="VFEMachineBase">
 		<defName>VFE_Mechanoids_AutoMedic</defName>
 		<label>auto-medic</label>
 		<race>VFE_Mechanoids_AutoMedic</race>
@@ -701,7 +704,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<PawnKindDef ParentName="BaseMechanoidKind">
+	<PawnKindDef ParentName="VFEMachineBase">
 		<defName>VFE_Mechanoids_Autobuilder</defName>
 		<label>autobuilder</label>
 		<race>VFE_Mechanoids_Autobuilder</race>
@@ -779,7 +782,7 @@
 		</comps>
 	</ThingDef>
 
-	<PawnKindDef ParentName="BaseMechanoidKind">
+	<PawnKindDef ParentName="VFEMachineBase">
 		<defName>VFE_Mechanoids_Raider</defName>
 		<label>raider mechanoid</label>
 		<race>VFE_Mechanoids_Raider</race>
@@ -853,7 +856,7 @@
 		</comps>
 	</ThingDef>
 
-	<PawnKindDef ParentName="BaseMechanoidKind">
+	<PawnKindDef ParentName="VFEMachineBase">
 		<defName>VFE_Mechanoids_Pyro</defName>
 		<label>pyro mechanoid</label>
 		<race>VFE_Mechanoids_Pyro</race>
@@ -942,7 +945,7 @@
 		</comps>
 	</ThingDef>
 
-	<PawnKindDef ParentName="BaseMechanoidKind">
+	<PawnKindDef ParentName="VFEMachineBase">
 		<defName>VFE_Mechanoids_Autobroadcaster</defName>
 		<label>autobroadcaster</label>
 		<race>VFE_Mechanoids_Autobroadcaster</race>

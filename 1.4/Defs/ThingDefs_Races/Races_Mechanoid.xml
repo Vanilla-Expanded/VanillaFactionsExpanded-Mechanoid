@@ -21,13 +21,13 @@
 			<lifeExpectancy>2500</lifeExpectancy>
 			<bloodDef>Filth_MachineBits</bloodDef>
 		</race>
-		<allowInMechClusters>false</allowInMechClusters>
 	</ThingDef>
 
 	<PawnKindDef Name="VFE_MechanoidKind" Abstract="True">
 		<defaultFactionType>VFE_Mechanoid</defaultFactionType>
 		<aiAvoidCover>true</aiAvoidCover>
 		<destroyGearOnDrop>true</destroyGearOnDrop>
+		<allowInMechClusters>false</allowInMechClusters>
 		<modExtensions>
 			<li Class="VFEMech.UplinkCompatible"/>
 		</modExtensions>
