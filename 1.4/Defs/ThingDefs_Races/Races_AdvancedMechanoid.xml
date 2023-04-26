@@ -625,6 +625,8 @@
 		<description>A heavy, large-sized mechanoid. Termites specialize in burrowing, digging, and breaking through defensive structures. Defenders need to decide whether to try to eliminate the termite before it can dig through their defenses, or take it where it emerges. Unlike the simple models, advanced termites carry a much more powerful cannon that’s just as effective against structures as it is against organic enemies.</description>
 		<statBases>
 			<MoveSpeed>2.3</MoveSpeed>
+			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.65</ArmorRating_Sharp>
 		</statBases>
 		<tools>
 			<li>
@@ -632,7 +634,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>17</power>
+				<power>20</power>
 				<cooldownTime>2.6</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>

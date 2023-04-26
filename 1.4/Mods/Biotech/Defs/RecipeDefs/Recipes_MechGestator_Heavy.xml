@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef ParentName="HeavyMechanoidRecipe">
+		<defName>VFE_TermiteRecipe</defName>
+		<label>gestate termite</label>
+		<description>Gestate a termite mechanoid.</description>
+		<researchPrerequisite>UltraMechtech</researchPrerequisite>
+		<recipeUsers>
+			<li>LargeMechGestator</li>
+		</recipeUsers>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>300</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>200</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SubcoreHigh</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<VFE_Mech_Termite_PlayerControlled>1</VFE_Mech_Termite_PlayerControlled>
+		</products>
+		<descriptionHyperlinks>
+			<ThingDef>VFE_Mech_Termite_PlayerControlled</ThingDef>
+		</descriptionHyperlinks>
+	</RecipeDef>
+	<RecipeDef ParentName="HeavyMechanoidRecipe">
+		<defName>VFE_AdvancedTermiteRecipe</defName>
+		<label>gestate advanced termite</label>
+		<description>Gestate an advanced termite mechanoid.</description>
+		<researchPrerequisite>VFE_HardwareUpgrade</researchPrerequisite>
+		<recipeUsers>
+			<li>LargeMechGestator</li>
+		</recipeUsers>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>350</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>250</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VFE_ComponentMechanoid</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SubcoreHigh</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<VFE_Mech_AdvancedTermite_PlayerControlled>1</VFE_Mech_AdvancedTermite_PlayerControlled>
+		</products>
+		<descriptionHyperlinks>
+			<ThingDef>VFE_Mech_AdvancedTermite_PlayerControlled</ThingDef>
+		</descriptionHyperlinks>
+	</RecipeDef>
+	<RecipeDef ParentName="CentipedeMechanoidRecipe">
+		<defName>VFE_AdvancedCentipedeRecipe</defName>
+		<label>gestate advanced centipede</label>
+		<description>Gestate an advanced centipede mechanoid.</description>
+		<recipeUsers>
+			<li>LargeMechGestator</li>
+		</recipeUsers>
+		<products>
+			<VFE_Mech_AdvancedCentipede_PlayerControlled>1</VFE_Mech_AdvancedCentipede_PlayerControlled>
+		</products>
+		<descriptionHyperlinks>
+			<ThingDef>VFE_Mech_AdvancedCentipede_PlayerControlled</ThingDef>
+		</descriptionHyperlinks>
+		<gestationCycles>6</gestationCycles>
+		<researchPrerequisite>VFE_HardwareUpgrade</researchPrerequisite>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>300</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>300</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VFE_ComponentMechanoid</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SubcoreHigh</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+	</RecipeDef>
+</Defs>

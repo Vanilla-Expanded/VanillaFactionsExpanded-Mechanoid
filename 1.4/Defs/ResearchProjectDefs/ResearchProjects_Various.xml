@@ -153,7 +153,7 @@
 		<prerequisites>
 			<li>VFE_BasicDroneAssembly</li>
 		</prerequisites>
-		<researchViewX>9.00</researchViewX>
+		<researchViewX>10.00</researchViewX>
 		<researchViewY>4.90</researchViewY>
 	</ResearchProjectDef>
 </Defs>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName = "ResurrectMediumMech"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Corpse_VFE_Mech_Inquisitor_PlayerControlled</li>
+			<li>Corpse_VFE_Mech_Knight_PlayerControlled</li>
+			<li>Corpse_VFE_Mech_AdvancedLancer_PlayerControlled</li>
+			<li>Corpse_VFE_Mech_AdvancedScyther_PlayerControlled</li>
+			<li>Corpse_VFE_Mech_AdvancedPikeman_PlayerControlled</li>
+			<li>Corpse_VFE_Mech_AdvancedInquisitor_PlayerControlled</li>
+			<li>Corpse_VFE_Mech_AdvancedKnight_PlayerControlled</li>
+			
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName = "ResurrectHeavyMech"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Corpse_VFE_Mech_Termite_PlayerControlled</li>
+			<li>Corpse_VFE_Mech_AdvancedTermite_PlayerControlled</li>
+			<li>Corpse_VFE_Mech_AdvancedCentipede_PlayerControlled</li>
+			
+		</value>
+	</Operation>
+	
+	
+	
+</Patch>
