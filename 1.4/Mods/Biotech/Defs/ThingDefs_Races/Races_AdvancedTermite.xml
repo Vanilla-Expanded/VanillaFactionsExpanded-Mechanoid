@@ -24,6 +24,8 @@
 		</tools>
 		<race>
 			<body>MechanicalTermite</body>
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
 			<baseBodySize>1.9</baseBodySize>
 			<baseHealthScale>2.56</baseHealthScale>
 			<mechWeightClass>Heavy</mechWeightClass>
@@ -90,5 +92,8 @@
 		<weaponTags>
 			<li>VFE_MechanoidGunBreachHeavy</li>
 		</weaponTags>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>9999~9999</techHediffsMoney>
+		
 	</PawnKindDef>
 </Defs>
