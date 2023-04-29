@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8gZ3SVf0cNlzrPzzvYpB5896HlkOtymimG0kHMQStMxgPq/hRTHT37cr88gz3s8ogptVLVMmuhQfZIn+rzMIIg==",
+  "dgSpecHash": "rIfW8uq8WitprqBu0mr7DdnJJttZ8nYAcwaM/y/c+pAG6LHM9gkeMoKO6rd/Oko5QUW7n9722A4xQscXKLdu2g==",
   "success": true,
   "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaFactionsExpanded-Mechanoid\\1.4\\Source\\VFEM\\VFEM.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Vova\\.nuget\\packages\\lib.harmony\\2.2.2\\lib.harmony.2.2.2.nupkg.sha512"
+    "C:\\Users\\Sarg\\.nuget\\packages\\lib.harmony\\2.2.2\\lib.harmony.2.2.2.nupkg.sha512"
   ],
   "logs": []
 }

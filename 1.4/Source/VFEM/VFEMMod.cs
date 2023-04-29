@@ -22,7 +22,7 @@ namespace VFEM
 
         public override string SettingsCategory()
         {
-            return "Vanilla Factions Expanded - Mechanoids";
+            return "VFE - Mechanoids";
         }
 
         public override void WriteSettings()
