@@ -68,9 +68,19 @@
 			</lifeStageAges>
 		</race>
 		<comps>
-			<li Class="VFECore.CompProperties_ShieldBubble">
-				<EnergyShieldRechargeRate>0.003</EnergyShieldRechargeRate>
-				<EnergyShieldEnergyMax>30</EnergyShieldEnergyMax>
+			<li Class="CompProperties_ProjectileInterceptor">
+				<radius>1</radius>
+				<interceptGroundProjectiles>true</interceptGroundProjectiles>
+				<color>(0.4, 0.4, 0.4)</color>
+				<reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+				<activeSound>BulletShield_Ambience</activeSound>
+				<hitPoints>70</hitPoints>
+				<hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
+				<chargeDurationTicks>2500</chargeDurationTicks>
+				<!-- 90s -->
+				<drawWithNoSelection>True</drawWithNoSelection>
+				<disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
+				<gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
 			</li>
 		</comps>
 	</ThingDef>
@@ -85,7 +95,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/MechanoidFaction/VFE_MechKnight</texPath>
-					<maskPath>Things/Pawn/MechanoidFaction/AllegianceOverlays/Knight_Overlay</maskPath>
+					<maskPath>Things/Pawn/MechanoidFaction/AllegianceOverlays/MechKnight_Overlay</maskPath>
 					<shaderType>CutoutWithOverlay</shaderType>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>1.6</drawSize>
@@ -97,7 +107,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/MechanoidFaction/VFE_MechKnight</texPath>
-					<maskPath>Things/Pawn/MechanoidFaction/AllegianceOverlays/Knight_Overlay</maskPath>
+					<maskPath>Things/Pawn/MechanoidFaction/AllegianceOverlays/MechKnight_Overlay</maskPath>
 					<shaderType>CutoutWithOverlay</shaderType>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>1.6</drawSize>

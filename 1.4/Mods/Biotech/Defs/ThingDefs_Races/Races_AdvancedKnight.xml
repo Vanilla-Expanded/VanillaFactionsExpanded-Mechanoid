@@ -68,9 +68,19 @@
 			</lifeStageAges>
 		</race>
 		<comps>
-			<li Class="VFECore.CompProperties_ShieldBubble">
-				<EnergyShieldRechargeRate>0.05</EnergyShieldRechargeRate>
-				<EnergyShieldEnergyMax>70</EnergyShieldEnergyMax>
+			<li Class="CompProperties_ProjectileInterceptor">
+				<radius>1</radius>
+				<interceptGroundProjectiles>true</interceptGroundProjectiles>
+				<color>(0.4, 0.4, 0.4)</color>
+				<reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+				<activeSound>BulletShield_Ambience</activeSound>
+				<hitPoints>70</hitPoints>
+				<hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
+				<chargeDurationTicks>2500</chargeDurationTicks>
+				<!-- 90s -->
+				<drawWithNoSelection>True</drawWithNoSelection>
+				<disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
+				<gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
 			</li>
 		</comps>
 		
