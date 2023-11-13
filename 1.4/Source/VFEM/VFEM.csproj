@@ -303,6 +303,8 @@
     <Compile Include="Buildings\Building_IndustrialApiary.cs" />
     <Compile Include="Buildings\Building_IndoctrinationPod.cs" />
     <Compile Include="Buildings\Command_SetPlantToGrowAutoSower.cs" />
+    <Compile Include="Comps\CompSwapWeapons.cs" />
+    <Compile Include="Comps\Properties\CompProperties_SwapWeapons.cs" />
     <Compile Include="JobDrivers\JobDriver_EnterIndoctrinationPod.cs" />
     <Compile Include="Buildings\MechShipPart.cs" />
     <Compile Include="Buildings\HullRepairModule.cs" />
@@ -393,8 +395,7 @@
   <ItemGroup>
     <PackageReference Include="Lib.Harmony">
       <Version>2.2.2</Version>
-      <ExcludeAssets>runtime</ExcludeAssets>
-      <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  <ExcludeAssets>runtime</ExcludeAssets>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

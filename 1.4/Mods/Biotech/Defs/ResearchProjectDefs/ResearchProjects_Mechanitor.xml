@@ -6,7 +6,7 @@
 		<description>Researching the mechanoid hardware upgrade will allow you to build all the advanced mechanoids added in Vanilla Factions Expanded - Mechanoid.</description>
 		<baseCost>1000</baseCost>
 		<tab>VanillaExpanded</tab>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Spacer</techLevel>
 		<requiresMechanitor>true</requiresMechanitor>
 		<prerequisites>
 			<li>VFE_AdvancedDroneAssembly</li>

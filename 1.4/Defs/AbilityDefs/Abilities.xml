@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AbilityDef>
+		<defName>VFEM_SwapWeapon</defName>
+		<label>swap gun</label>
+		<description>Swaps between a charge blaster and an inferno gun.</description>
+		<iconPath>UI/VFEM_Swap</iconPath>
+		<cooldownTicksRange>1</cooldownTicksRange>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<hotKey>Misc12</hotKey>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>0.5</warmupTime>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetHumans>false</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="VFEMech.CompProperties_SwapWeapons">
+				<weapon1>VFE_Gun_AdvancedChargeBlasterHeavy</weapon1>
+				<weapon2>VFE_Gun_AdvancedInfernoCannon</weapon2>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+</Defs>

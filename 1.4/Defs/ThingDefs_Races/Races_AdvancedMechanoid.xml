@@ -88,6 +88,10 @@
 		<label>advanced centipede</label>
 		<race>VFE_Mech_AdvancedCentipede</race>
 		<combatPower>400</combatPower>
+		<abilities>
+			<li>VFEM_SwapWeapon</li>
+			
+		</abilities>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
