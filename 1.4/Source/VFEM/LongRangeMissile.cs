@@ -487,6 +487,8 @@ namespace VFEMech
             WorldObject worldObject = Find.World.worldObjects.WorldObjectAt<WorldObject>(this.destinationTile);
             if (worldObject is MapParent mp && mp.HasMap)
             {
+                mp.Map.roofGrid.SetRoof(mp.Map.Center, null);
+
                 List<Thing> at = mp.Map.thingGrid.ThingsListAt(mp.Map.Center);
                 for (int i = 0; i < at.Count; i++)
                 {
