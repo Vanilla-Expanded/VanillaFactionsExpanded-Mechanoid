@@ -13,7 +13,15 @@
 		</prerequisites>
   <researchViewX>5.00</researchViewX>
   <researchViewY>4.25</researchViewY>
-
+<generalRules>
+  <rulesStrings>
+    <li>subject->industrial efficiency</li>
+    <li>subject_story->pioneered the first integrated production lines</li>
+    <li>subject_story->transformed a small workshop into a cornerstone of the industrial revolution</li>
+    <li>subject_story->saw beyond the chaos of factory floors to the beauty of synchronized machinery</li>
+    <li>subject_gerund->laying the groundwork for modern manufacturing</li>
+  </rulesStrings>
+</generalRules>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -28,6 +36,15 @@
 		</prerequisites>
   <researchViewX>6.00</researchViewX>
   <researchViewY>4.25</researchViewY>
+  <generalRules>
+  <rulesStrings>
+    <li>subject->automated component fabrication</li>
+    <li>subject_story->unveiled the potential of autonomous machines in electronics production</li>
+    <li>subject_story->bridged the gap between raw materials and advanced technology</li>
+    <li>subject_story->revolutionized the production of high-tech components, making them accessible to all</li>
+    <li>subject_gerund->streamlining the creation of electronics</li>
+  </rulesStrings>
+</generalRules>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -42,6 +59,15 @@
 		</prerequisites>
   <researchViewX>7.00</researchViewX>
   <researchViewY>4.25</researchViewY>
+  <generalRules>
+  <rulesStrings>
+    <li>subject->advanced materials processing</li>
+    <li>subject_story->devised a method to extract maximum value from common stone</li>
+    <li>subject_story->transformed ordinary rocks into the backbone of the strongest structures</li>
+    <li>subject_story->found a way to mimic the properties of rare materials through ingenuity and pressure</li>
+    <li>subject_gerund->redefining material science</li>
+  </rulesStrings>
+</generalRules>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -56,6 +82,15 @@
 		</prerequisites>
   <researchViewX>8.00</researchViewX>
   <researchViewY>4.25</researchViewY>
+  <generalRules>
+  <rulesStrings>
+    <li>subject->weapons manufacturing</li>
+    <li>subject_story->mastered the art of turning nature into firepower</li>
+    <li>subject_story->equipped a defenseless colony to become a formidable fortress</li>
+    <li>subject_story->created munitions that changed the tide of countless battles</li>
+    <li>subject_gerund->arming the future</li>
+  </rulesStrings>
+</generalRules>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -70,6 +105,15 @@
 		</prerequisites>
   <researchViewX>5.00</researchViewX>
   <researchViewY>4.90</researchViewY>
+  <generalRules>
+  <rulesStrings>
+    <li>subject->sustainable fashion production</li>
+    <li>subject_story->revolutionized the apparel industry by introducing closed-loop recycling</li>
+    <li>subject_story->crafted garments that combined ancient weaving techniques with modern technology</li>
+    <li>subject_story->developed a method to mimic luxury textiles, making them available to all</li>
+    <li>subject_gerund->reinventing textile manufacturing</li>
+  </rulesStrings>
+</generalRules>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -84,6 +128,15 @@
 		</prerequisites>
   <researchViewX>9.00</researchViewX>
   <researchViewY>4.25</researchViewY>
+  <generalRules>
+  <rulesStrings>
+    <li>subject->efficient food processing</li>
+    <li>subject_story->turned surplus harvests into lifesaving provisions for distant colonies</li>
+    <li>subject_story->invented a zero-waste system that transformed the way food is conserved</li>
+    <li>subject_story->pioneered techniques in preserving flavors, changing the culinary world</li>
+    <li>subject_gerund->mastering the art of food preservation</li>
+  </rulesStrings>
+</generalRules>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -98,6 +151,15 @@
 		</prerequisites>
   <researchViewX>6.00</researchViewX>
   <researchViewY>4.90</researchViewY>
+  <generalRules>
+  <rulesStrings>
+    <li>subject->pharmaceutical innovation</li>
+    <li>subject_story->discovered a formula that rendered common diseases powerless</li>
+    <li>subject_story->blurred the lines between traditional herbal remedies and modern medicine</li>
+    <li>subject_story->created a drug that became a cornerstone in the fight against epidemics</li>
+    <li>subject_gerund->advancing medical science</li>
+  </rulesStrings>
+</generalRules>
 	</ResearchProjectDef>
 	
 	
@@ -113,6 +175,15 @@
 		</prerequisites>
   <researchViewX>8.00</researchViewX>
   <researchViewY>4.90</researchViewY>
+  <generalRules>
+  <rulesStrings>
+    <li>subject->automation pioneers</li>
+    <li>subject_story->launched the era of labor-free maintenance with their first drone</li>
+    <li>subject_story->dreamed of a world where technology ensured no one had to toil</li>
+    <li>subject_story->introduced drones that became the backbone of industrial expansion</li>
+    <li>subject_gerund->ushering in the age of automation</li>
+  </rulesStrings>
+</generalRules>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -127,6 +198,15 @@
 		</prerequisites>
   <researchViewX>9.00</researchViewX>
   <researchViewY>4.90</researchViewY>
+  <generalRules>
+  <rulesStrings>
+    <li>subject->defensive technologies</li>
+    <li>subject_story->engineered drones that guarded homes and defended frontiers</li>
+    <li>subject_story->turned the tide of sieges with their automated fortresses</li>
+    <li>subject_story->pioneered the use of AI in peacekeeping and defense strategies</li>
+    <li>subject_gerund->fortifying security through innovation</li>
+  </rulesStrings>
+</generalRules>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -141,6 +221,15 @@
 		</prerequisites>
 		<researchViewX>7.00</researchViewX>
 		<researchViewY>4.90</researchViewY>
+		<generalRules>
+  <rulesStrings>
+    <li>subject->mechanoid architecture</li>
+    <li>subject_story->built the first structures that could repair and alter themselves</li>
+    <li>subject_story->combined alien technologies to create living buildings</li>
+    <li>subject_story->envisioned cities that could adapt to their inhabitants' needs</li>
+    <li>subject_gerund->melding construction with alien tech</li>
+  </rulesStrings>
+</generalRules>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef>
@@ -155,5 +244,14 @@
 		</prerequisites>
 		<researchViewX>10.00</researchViewX>
 		<researchViewY>4.90</researchViewY>
+		<generalRules>
+  <rulesStrings>
+    <li>subject->cognitive machine evolution</li>
+    <li>subject_story->developed drones capable of independent thought and problem-solving</li>
+    <li>subject_story->overcame the barriers between artificial intelligence and true consciousness</li>
+    <li>subject_story->crafted drones that could learn, adapt, and innovate on their own</li>
+    <li>subject_gerund->breaching the final frontier of AI</li>
+  </rulesStrings>
+</generalRules>
 	</ResearchProjectDef>
 </Defs>
