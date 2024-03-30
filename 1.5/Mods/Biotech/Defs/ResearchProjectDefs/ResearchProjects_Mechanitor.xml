@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchProjectDef>
+		<defName>VFE_HardwareUpgrade</defName>
+		<label>hardware upgrade</label>
+		<description>Researching the mechanoid hardware upgrade will allow you to build all the advanced mechanoids added in Vanilla Factions Expanded - Mechanoid.</description>
+		<baseCost>1000</baseCost>
+		<tab>VanillaExpanded</tab>
+		<techLevel>Spacer</techLevel>
+		<requiresMechanitor>true</requiresMechanitor>
+		<prerequisites>
+			<li>VFE_AdvancedDroneAssembly</li>
+			<li>UltraMechtech</li>
+		</prerequisites>
+		<researchViewX>10.00</researchViewX>
+		<researchViewY>4.25</researchViewY>
+	</ResearchProjectDef>
+</Defs>

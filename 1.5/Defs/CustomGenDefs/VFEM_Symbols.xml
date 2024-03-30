@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <KCSG.SymbolDef>
+    <defName>VFE_Turret_ChargeBlasterCannon</defName>
+    <thing>VFE_Turret_ChargeBlasterCannon</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_MechanoidEnginesSmall_South</defName>
+    <thing>VFE_MechanoidEnginesSmall</thing>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_AssemblyPod</defName>
+    <thing>VFE_AssemblyPod</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_MechanoidEngines_North</defName>
+    <thing>VFE_MechanoidEngines</thing>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_CargoHold_North</defName>
+    <thing>VFE_CargoHold</thing>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_MechanoidBarrier</defName>
+    <thing>VFE_MechanoidBarrier</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_MechanoidBeamHeavy_North</defName>
+    <thing>VFE_MechanoidBeamHeavy</thing>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_PsychicSuppressor</defName>
+    <thing>VFE_PsychicSuppressor</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_Turret_AutoMortarCannon</defName>
+    <thing>VFE_Turret_AutoMortarCannon</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_MechanoidUplink</defName>
+    <thing>VFE_MechanoidUplink</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_MortarShield</defName>
+    <thing>VFE_MortarShield</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_MechanoidTerraformer</defName>
+    <thing>VFE_MechanoidTerraformer</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_MechanoidBeamLight_North</defName>
+    <thing>VFE_MechanoidBeamLight</thing>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_MechanoidReactor_East</defName>
+    <thing>VFE_MechanoidReactor</thing>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_HeavyMachinery</defName>
+    <thing>VFE_HeavyMachinery</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_Turret_ChargeLanceCannon</defName>
+    <thing>VFE_Turret_ChargeLanceCannon</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_PsychicDroner</defName>
+    <thing>VFE_PsychicDroner</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_CargoHold_West</defName>
+    <thing>VFE_CargoHold</thing>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_AssemblyFoundry</defName>
+    <thing>VFE_AssemblyFoundry</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_EMIDynamo</defName>
+    <thing>VFE_EMIDynamo</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_MechanoidReactor_North</defName>
+    <thing>VFE_MechanoidReactor</thing>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_MechanoidBeamLight_East</defName>
+    <thing>VFE_MechanoidBeamLight</thing>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_MechanoidEnginesSmall_West</defName>
+    <thing>VFE_MechanoidEnginesSmall</thing>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_MechanoidBeamHeavy_East</defName>
+    <thing>VFE_MechanoidBeamHeavy</thing>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_MechanoidEngines_West</defName>
+    <thing>VFE_MechanoidEngines</thing>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_Turret_OrbitalBombardmentUplink</defName>
+    <thing>VFE_Turret_OrbitalBombardmentUplink</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_Turret_InfernoLauncherArtillery</defName>
+    <thing>VFE_Turret_InfernoLauncherArtillery</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_HullRepairModule</defName>
+    <thing>VFE_HullRepairModule</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_ClimateAdjuster</defName>
+    <thing>VFE_ClimateAdjuster</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_MechanoidBeamHeavy_West</defName>
+    <thing>VFE_MechanoidBeamHeavy</thing>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_MechanoidEnginesSmall_North</defName>
+    <thing>VFE_MechanoidEnginesSmall</thing>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_MechanoidEngines_South</defName>
+    <thing>VFE_MechanoidEngines</thing>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_MechanoidReactor_West</defName>
+    <thing>VFE_MechanoidReactor</thing>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_BulletShield</defName>
+    <thing>VFE_BulletShield</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_Turret_ChargeRailgun</defName>
+    <thing>VFE_Turret_ChargeRailgun</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_CargoHold_East</defName>
+    <thing>VFE_CargoHold</thing>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_CargoHold_South</defName>
+    <thing>VFE_CargoHold</thing>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_MechanoidEngines_East</defName>
+    <thing>VFE_MechanoidEngines</thing>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_MechanoidEnginesSmall_East</defName>
+    <thing>VFE_MechanoidEnginesSmall</thing>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_MechanoidBeamLight_West</defName>
+    <thing>VFE_MechanoidBeamLight</thing>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_MechanoidReactor_South</defName>
+    <thing>VFE_MechanoidReactor</thing>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_TrooperStorage</defName>
+    <thing>VFE_TrooperStorage</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_MechanoidBeamLight_South</defName>
+    <thing>VFE_MechanoidBeamLight</thing>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_MechanoidBeamHeavy_South</defName>
+    <thing>VFE_MechanoidBeamHeavy</thing>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_CargoContainer_South</defName>
+    <thing>VFE_CargoContainer</thing>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_CargoContainer_East</defName>
+    <thing>VFE_CargoContainer</thing>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_CargoContainer_North</defName>
+    <thing>VFE_CargoContainer</thing>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_CargoContainer_West</defName>
+    <thing>VFE_CargoContainer</thing>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEM_HeavyHopper_West</defName>
+    <thing>VFEM_HeavyHopper</thing>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEM_ElectronicsFabricationFactory_SteelExtractor_West</defName>
+    <thing>VFEM_ElectronicsFabricationFactory_SteelExtractor</thing>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEM_HeavyHopper_East</defName>
+    <thing>VFEM_HeavyHopper</thing>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEM_ElectronicsFabricationFactory_ComponentAssembler_East</defName>
+    <thing>VFEM_ElectronicsFabricationFactory_ComponentAssembler</thing>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEM_ElectronicsFabricationFactory_AdvancedAssembler_East</defName>
+    <thing>VFEM_ElectronicsFabricationFactory_AdvancedAssembler</thing>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEM_HeavyHopper_North</defName>
+    <thing>VFEM_HeavyHopper</thing>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEM_HeavyHopper_South</defName>
+    <thing>VFEM_HeavyHopper</thing>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEM_MunitionsAndArmamentFactory_ChemfuelClarifier_East</defName>
+    <thing>VFEM_MunitionsAndArmamentFactory_ChemfuelClarifier</thing>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEM_MunitionsAndArmamentFactory_MechanizedWeaponsmith_East</defName>
+    <thing>VFEM_MunitionsAndArmamentFactory_MechanizedWeaponsmith</thing>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEM_MunitionsAndArmamentFactory_ArtilleryFoundry_South</defName>
+    <thing>VFEM_MunitionsAndArmamentFactory_ArtilleryFoundry</thing>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEM_WearablesAndTextileFactory_AutoLoom_South</defName>
+    <thing>VFEM_WearablesAndTextileFactory_AutoLoom</thing>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEM_WearablesAndTextileFactory_SynthreadSynthesizer_North</defName>
+    <thing>VFEM_WearablesAndTextileFactory_SynthreadSynthesizer</thing>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEM_WearablesAndTextileFactory_TextileRecycler_South</defName>
+    <thing>VFEM_WearablesAndTextileFactory_TextileRecycler</thing>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEM_ProvisionsPackagingFactory_MeatGrinder_East</defName>
+    <thing>VFEM_ProvisionsPackagingFactory_MeatGrinder</thing>
+    <rotation>East</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEM_ProvisionsPackagingFactory_ConveyorOven_West</defName>
+    <thing>VFEM_ProvisionsPackagingFactory_ConveyorOven</thing>
+    <rotation>West</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_ConduitPylon</defName>
+    <thing>VFE_ConduitPylon</thing>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEM_MasonryAndMetallicsFactory_MasonrySaw_South</defName>
+    <thing>VFEM_MasonryAndMetallicsFactory_MasonrySaw</thing>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEM_MasonryAndMetallicsFactory_AutomaticDrill_North</defName>
+    <thing>VFEM_MasonryAndMetallicsFactory_AutomaticDrill</thing>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEM_MedicinalCompoundingFactory_NeutroamineInfuser_North</defName>
+    <thing>VFEM_MedicinalCompoundingFactory_NeutroamineInfuser</thing>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEM_MedicinalCompoundingFactory_MedicineGranulator_North</defName>
+    <thing>VFEM_MedicinalCompoundingFactory_MedicineGranulator</thing>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEM_WearablesAndTextileFactory_SynthreadSynthesizer_South</defName>
+    <thing>VFEM_WearablesAndTextileFactory_SynthreadSynthesizer</thing>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEM_ElectronicsFabricationFactory_SteelExtractor_North</defName>
+    <thing>VFEM_ElectronicsFabricationFactory_SteelExtractor</thing>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEM_ProvisionsPackagingFactory_MeatGrinder_North</defName>
+    <thing>VFEM_ProvisionsPackagingFactory_MeatGrinder</thing>
+    <rotation>North</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEM_ProvisionsPackagingFactory_ConveyorOven_South</defName>
+    <thing>VFEM_ProvisionsPackagingFactory_ConveyorOven</thing>
+    <rotation>South</rotation>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_Supercomputer</defName>
+    <thing>VFE_Supercomputer</thing>
+  </KCSG.SymbolDef>
+</Defs>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BaseMechanoidWalker">
+		<defName>VFE_Mech_Inquisitor_PlayerControlled</defName>
+		<label>inquisitor</label>
+		<description>A lumbering, slow, superheavy mechanoid meant for area denial and bunker busting via flamethrower. While the plume of flame itself is short ranged, encountering an Inquisitor at close range is ill-advised, as the back-mounted chemfuel tanks are programmed to explode upon a system malfunction.</description>
+		<thingClass>VFEMech.Mech_Inquisitor</thingClass>
+		<statBases>
+			<MoveSpeed>2.0</MoveSpeed>
+			<ArmorRating_Blunt>0.32</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.78</ArmorRating_Sharp>
+			<BandwidthCost>2</BandwidthCost>
+		</statBases>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12.0</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12.0</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8.5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<deathAction>
+				<workerClass>VFEMech.DeathActionWorker_BigBombExplosion</workerClass>
+			</deathAction>
+			<body>Lancer</body>
+			<baseHealthScale>1.4</baseHealthScale>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Metal</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<mechWeightClass>Medium</mechWeightClass>
+			<lifeStageAges Inherit="False">
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Scorcher_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Scorcher_Death</soundDeath>
+					<soundCall>Pawn_Mech_Scorcher_Call</soundCall>
+				</li>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>100</minAge>
+					<soundWounded>Pawn_Mech_Scorcher_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Scorcher_Death</soundDeath>
+					<soundCall>Pawn_Mech_Scorcher_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+	</ThingDef>
+	<PawnKindDef ParentName="BaseMechanoidKind">
+		<defName>VFE_Mech_Inquisitor_PlayerControlled</defName>
+		<label>inquisitor</label>
+		<race>VFE_Mech_Inquisitor_PlayerControlled</race>
+		<combatPower>200</combatPower>
+		<allowInMechClusters>false</allowInMechClusters>
+		<isFighter>false</isFighter>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/MechanoidFaction/VFE_Scorcher</texPath>
+					<maskPath>Things/Pawn/MechanoidFaction/AllegianceOverlays/Inquisitor_Overlay</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/MechanoidFaction/VFE_Scorcher</texPath>
+					<maskPath>Things/Pawn/MechanoidFaction/AllegianceOverlays/Inquisitor_Overlay</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.8, 0.4)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponMoney>9999~9999</weaponMoney>
+		<weaponTags>
+			<li>VFE_MechanoidGunFlamer</li>
+		</weaponTags>
+	</PawnKindDef>
+</Defs>
