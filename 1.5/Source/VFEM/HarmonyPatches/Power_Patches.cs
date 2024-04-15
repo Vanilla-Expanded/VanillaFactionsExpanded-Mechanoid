@@ -17,7 +17,7 @@ namespace VFEMech
     {
         public static void Postfix(ref IEnumerable<CompPower> __result, CompPower b)
         {
-			if (CompPylon.compPylons.TryGetValue(b.parent.Map, out List<CompPower> compPylons) && b.parent.Spawned)
+			if (b.parent.Map != null && CompPylon.compPylons.TryGetValue(b.parent.Map, out List<CompPower> compPylons) && b.parent.Spawned)
 			{
 				var nearbyPylons = compPylons.Where(x => x.parent.Position.DistanceTo(b.parent.Position) <= 18);
 				foreach (var nearbyPylon in nearbyPylons)
@@ -25,46 +25,6 @@ namespace VFEMech
 					__result.AddItem(nearbyPylon);
 				}
 			}
-
-			//if (__result.Count() == 0)
-            //{
-			//	List<CompPower> compPowers = __result.ToList();
-			//	if (b.parent.Spawned && CompPylon.compPylons.TryGetValue(b.parent.Map, out List<CompPower> compPylons))
-			//	{
-			//		var nearbyPylons = compPylons.Where(x => x.parent.Position.DistanceTo(b.parent.Position) <= 18);
-			//		if (nearbyPylons.Any())
-			//	    {
-			//			compPowers.AddRange(nearbyPylons);
-			//	    }
-			//	}
-			//
-			//	// old vanilla non-performant code...
-			//	//if (!b.parent.Spawned)
-			//	//{
-			//	//	Log.Warning(string.Concat("Can't check potential connectors for ", b, " because it's unspawned."));
-			//	//}
-			//	//CellRect rect = b.parent.OccupiedRect().ExpandedBy(18).ClipInsideMap(b.parent.Map);
-			//	//for (int z = rect.minZ; z <= rect.maxZ; z++)
-			//	//{
-			//	//	for (int x = rect.minX; x <= rect.maxX; x++)
-			//	//	{
-			//	//		IntVec3 c = new IntVec3(x, 0, z);
-			//	//		List<Thing> thingList = b.parent.Map.thingGrid.ThingsListAt(c);
-			//	//		for (int i = 0; i < thingList.Count; i++)
-			//	//		{
-			//	//			if (thingList[i].def == VFEMDefOf.VFE_ConduitPylon && thingList[i].TryGetComp<CompFlickable>().SwitchIsOn)
-			//	//			{
-			//	//				var compPower = thingList[i].TryGetComp<CompPower>();
-			//	//				if (compPower != null)
-			//	//				{
-			//	//					compPowers.Add(compPower);
-			//	//				}
-			//	//			}
-			//	//		}
-			//	//	}
-			//	//}
-			//	__result = compPowers;
-			//}
 		}
     }
 
@@ -74,7 +34,7 @@ namespace VFEMech
 	{
 		public static void Postfix(ref CompPower __result, IntVec3 connectorPos, Map map, List<PowerNet> disallowedNets = null)
 		{
-			if (__result == null)
+			if (__result == null && map != null)
             {
 				CellRect cellRect = CellRect.SingleCell(connectorPos).ExpandedBy(18).ClipInsideMap(map);
 				cellRect.ClipInsideMap(map);
