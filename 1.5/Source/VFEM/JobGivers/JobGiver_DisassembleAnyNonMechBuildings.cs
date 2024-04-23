@@ -43,7 +43,7 @@ namespace VFEMech
 						return JobMaker.MakeJob(JobDefOf.Goto, cell);
 					}
 				}
-				var allThings = pawn.Map.listerThings.AllThings.Where(x => x.Faction != null && x.Faction != pawn.Faction && x.def.building != null);
+				var allThings = pawn.Map.listerThings.AllThings.Where(x => x.Faction != null && x.Faction != pawn.Faction && x.def.building != null && x.def.building.IsDeconstructible);
 				Predicate<Thing> validator = (Thing t) => pawn.CanReserve(t);
 				if (allThings.Any())
 				{
