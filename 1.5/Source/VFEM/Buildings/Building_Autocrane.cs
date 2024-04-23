@@ -196,9 +196,9 @@ namespace VFEMech
             base.Tick();
             if (this.Map != null && compPower.PowerOn && this.Faction == Faction.OfPlayer)
             {
-                if (this.IsHashIntervalTick((int)alertnessLevel) && !HasAnyTarget)
+                if (this.IsHashIntervalTick((int)alertnessLevel))
                 {
-                    if (TryFindFirstValidTarget(out LocalTargetInfo targetInfo))
+                    if (!HasAnyTarget && TryFindFirstValidTarget(out LocalTargetInfo targetInfo))
                     {
                         curCellTarget = IntVec3.Invalid;
                         StartMovingTo(targetInfo);
@@ -264,7 +264,6 @@ namespace VFEMech
             if (!HasFrameTarget)
             {
                 targetInfo = curFrameTarget = NextFrameTarget();
-
                 if (curFrameTarget != null)
                 {
                     curBuildingTarget = null;
@@ -473,7 +472,7 @@ namespace VFEMech
         private Frame NextFrameTarget()
         {
             return GenRadial.RadialDistinctThingsAround(this.Position, Map, MaxDistanceToTargets, true).OfType<Frame>()
-                .Where(x => x.TotalMaterialCost().Count <= 0 && BaseValidator(x)).OrderBy(x => x.Position.DistanceTo(endCranePosition)).FirstOrDefault();
+                .Where(x => x.IsCompleted() && BaseValidator(x)).OrderBy(x => x.Position.DistanceTo(endCranePosition)).FirstOrDefault();
         }
 
         private Building NextDamagedBuildingTarget()
