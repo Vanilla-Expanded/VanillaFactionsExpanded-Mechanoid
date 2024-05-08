@@ -57,7 +57,7 @@
 			<intelligence>ToolUser</intelligence>
 			<thinkTreeMain>Mechanoid</thinkTreeMain>
 			<body>MechanicalCentipede</body>
-			<baseBodySize>1.8</baseBodySize>
+			<baseBodySize>3</baseBodySize>
 			<baseHealthScale>4.32</baseHealthScale>
 			<lifeStageAges>
 				<li>
