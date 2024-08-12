@@ -2122,6 +2122,7 @@
 		<passability>PassThroughOnly</passability>
 		<blockWind>true</blockWind>
 		<drawerType>MapMeshAndRealTime</drawerType>
+		<rotatable>false</rotatable>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
