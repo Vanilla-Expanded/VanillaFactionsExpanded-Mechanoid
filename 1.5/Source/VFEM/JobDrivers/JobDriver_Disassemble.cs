@@ -49,6 +49,10 @@ namespace VFEMech
 		protected void FinishedRemoving()
 		{
 			this.Target.Destroy(DestroyMode.Refund);
+   			if (Find.PlaySettings.autoRebuild)
+			{
+	                	GenConstruct.PlaceBlueprintForBuild(this.Target.def, this.Target.Position, base.Map, this.Target.Rotation, Faction.OfPlayer, this.Target.Stuff);
+	            	}
 		}
 	}
 }
