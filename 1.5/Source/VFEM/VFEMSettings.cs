@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -30,10 +30,12 @@ namespace VFEM
 
 
         public bool totalWarIsDisabled;
+        public bool carpentersLeaveBlueprints;
         public override void ExposeData()
         {
             base.ExposeData();
             Scribe_Values.Look(ref totalWarIsDisabled, "totalWarIsDisabled");
+            Scribe_Values.Look(ref carpentersLeaveBlueprints, "carpentersLeaveBlueprints");
             Scribe_Collections.Look(ref mechShipIncidentChances, "mechShipStates",        LookMode.Value, LookMode.Value, ref mechShipKeys,  ref floatValues);
             Scribe_Collections.Look(ref mechShipPresences,       "mechShipPresences",     LookMode.Value, LookMode.Value, ref mechShipKeys2, ref intValues2);
             Scribe_Collections.Look(ref mechShipColonistCount,   "mechShipColonistCount", LookMode.Value, LookMode.Value, ref mechShipKeys3, ref intValues3);
@@ -78,6 +80,7 @@ namespace VFEM
             Listing_Standard listingStandard = new Listing_Standard();
             listingStandard.Begin(rect2);
             listingStandard.CheckboxLabeled("VFEMech.DisableTotalWarMechanic".Translate(), ref totalWarIsDisabled);
+            listingStandard.CheckboxLabeled("VFEMech.CarpentersLeaveBlueprints".Translate(), ref carpentersLeaveBlueprints);
             listingStandard.GapLine();
             listingStandard.Label("VFEMech.AdjustIncidentTimeInterval".Translate());
             
