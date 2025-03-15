@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Vanilla Factions Expanded - Vikings</li>
+			<li>Vanilla Factions Expanded - Medieval 2</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
@@ -60,7 +60,7 @@
 							<canOverlapZones>false</canOverlapZones>
 						
 							<building>
-								<soundAmbient>VFEV_Apiary_Ambience</soundAmbient>
+								<soundAmbient>VFEM2_Apiary_Ambience</soundAmbient>
 								<wantsHopperAdjacent>true</wantsHopperAdjacent>
 								<buildingTags>
 									<li>Production</li>

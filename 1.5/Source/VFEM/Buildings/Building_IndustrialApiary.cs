@@ -18,6 +18,8 @@ namespace VFEMech
         private List<IntVec3> cellsAround = new List<IntVec3>();
         CompPowerTrader compPower;
 
+        public const int minFlowersNeeded = 28;
+
         public bool HoneyReady
         {
             get
@@ -76,8 +78,9 @@ namespace VFEMech
 
                 if (HoneyReady)
                 {
-                    Thing thing = ThingMaker.MakeThing(ThingDef.Named("VFEV_Honey"), null);
-                    thing.stackCount = 75;
+                    Thing thing = ThingMaker.MakeThing(ThingDef.Named("VFEM2_Honey"), null);
+                    thing.stackCount = flowerCount > 75 ? 75 : flowerCount;
+                  
                     GenPlace.TryPlaceThing(thing, this.InteractionCell, this.Map, ThingPlaceMode.Direct);
                     this.Reset();
 
@@ -104,19 +107,19 @@ namespace VFEMech
 
             if (this.HoneyReady)
             {
-                stringBuilder.AppendLine("AReady".Translate());
+                stringBuilder.AppendLine("VFEM2_Ready".Translate());
             }
             else
             {
                 if (!IsthereFlowerAround)
                 {
-                    stringBuilder.AppendLine("ANeedFlower".Translate(flowerNeeded));
+                    stringBuilder.AppendLine("VFEM2_NeedFlower".Translate(flowerNeeded));
                 }
                 else
                 {
                     if (this.AmbientTemperature < 10)
                     {
-                        stringBuilder.AppendLine("AResting".Translate());
+                        stringBuilder.AppendLine("VFEM2_Resting".Translate());
                     }
                     else
                     {
@@ -132,7 +135,7 @@ namespace VFEMech
 
         private int FlowerNeeded()
         {
-            int i = (cellsAround.Count - 8) / 2;
+            int i = minFlowersNeeded;
             i -= flowerCount;
             return i;
         }
@@ -151,7 +154,7 @@ namespace VFEMech
                     }
                 }
             }
-            if (flowerCount >= (int)((cellsAround.Count - 8) / 2))
+            if (flowerCount >= minFlowersNeeded)
             {
                 return true;
             }
@@ -165,10 +168,10 @@ namespace VFEMech
             {
                 return cellsAround;
             }
-            IEnumerable<IntVec3> cells = CellRect.CenteredOn(this.Position, 7).Cells;
+            IEnumerable<IntVec3> cells = CellRect.CenteredOn(this.Position, 10).Cells;
             foreach (IntVec3 item in cells)
             {
-                if (item.InHorDistOf(pos, 6.9f))
+                if (item.InHorDistOf(pos, 9.9f))
                 {
                     cellsAround.Add(item);
                 }
